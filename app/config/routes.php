@@ -43,4 +43,18 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |
 */
 
-$router->get('/', 'Welcome::index');
+// Landing page
+$router->get('/', 'HomeController@index');
+
+// Authentication Routes
+$router->get('/login', 'AuthController@login_page');
+$router->get('/register', 'AuthController@register_page');
+$router->post('/auth/register', 'AuthController@register');
+$router->post('/auth/login', 'AuthController@login');
+$router->get('/auth/google', 'AuthController@google_login');
+$router->get('/auth/google_callback', 'AuthController@google-callback');
+$router->get('/logout', 'AuthController@logout');
+
+
+// Dashboard (after login)
+$router->get('/dashboard', 'DashboardController@index');

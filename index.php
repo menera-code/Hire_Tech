@@ -83,5 +83,9 @@ define('PUBLIC_DIR', $public_folder);
  * Setup done? Then Hurray!
  * ------------------------------------------------------
  */
+
+// Handle Google OAuth callback with encoded characters
+
+require_once SYSTEM_DIR . 'kernel/LavaLust.php';
 require_once SYSTEM_DIR . 'kernel/LavaLust.php';
 ?>

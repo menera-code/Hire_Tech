@@ -58,16 +58,15 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 */
 
 $database['main'] = array(
-    'driver'	=> '',
-    'hostname'	=> '',
-    'port'		=> '',
-    'username'	=> '',
-    'password'	=> '',
-    'database'	=> '',
-    'charset'	=> '',
-    'dbprefix'	=> '',
-    // Optional for SQLite
-    'path'      => ''
+    'driver'   => 'mysql',        // MySQL driver
+    'hostname' => 'localhost',     // XAMPP default
+    'port'     => '3306',          // default MySQL port
+    'username' => 'root',          // XAMPP default user
+    'password' => '',              // XAMPP default password is empty
+    'database' => 'hiretech_db',      // name of your database
+    'charset'  => 'utf8',          // charset for database
+    'dbprefix' => '',              // optional, e.g., 'ht_' for all tables
+    'path'     => ''               // only used for SQLite, leave empty
 );
 
 ?>
