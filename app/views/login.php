@@ -238,54 +238,54 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
         }
 
         .google-signin-section {
-    margin-bottom: 25px;
-}
+        margin-bottom: 25px;
+        }
 
-.btn-google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    padding: 12px 20px;
-    border: 2px solid #e2e8f0;
-    border-radius: var(--border-radius);
-    background: white;
-    color: var(--text-dark);
-    font-weight: 500;
-    text-decoration: none;
-    transition: var(--transition);
-}
+        .btn-google {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            background: white;
+            color: var(--text-dark);
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+        }
 
-.btn-google:hover {
-    background: #f8fafc;
-    border-color: #cbd5e1;
-    transform: translateY(-1px);
-}
+        .btn-google:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+            transform: translateY(-1px);
+        }
 
-.divider {
-    position: relative;
-    text-align: center;
-    margin: 20px 0;
-    color: var(--text-light);
-    font-size: 0.9rem;
-}
+        .divider {
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
 
-.divider::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: #e2e8f0;
-}
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #e2e8f0;
+        }
 
-.divider span {
-    background: var(--bg-white);
-    padding: 0 15px;
-    position: relative;
-}
+        .divider span {
+            background: var(--bg-white);
+            padding: 0 15px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -379,6 +379,16 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
             // Auto-focus email field
             $('#email').focus();
         });
+
+        console.log("Login page loaded");
+
+// Debug form submission
+document.querySelector('form').addEventListener('submit', function(e) {
+    console.log("Form submitted");
+    console.log("Email:", document.querySelector('input[name="email"]').value);
+    console.log("Form action:", this.action);
+    console.log("Form method:", this.method);
+});
     </script>
 </body>
 </html>

@@ -16,10 +16,6 @@ class HomeController extends Controller {
     {
         $this->call->view('landing_page');
     }
-
-    public function login()
-    {
-        $this->call->view('login');
-    }
-
+  
+ 
 }

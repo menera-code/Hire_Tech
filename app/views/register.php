@@ -2,7 +2,23 @@
 
 $error = $_SESSION['error'] ?? null;
 $success = $_SESSION['success'] ?? null;
-unset($_SESSION['error'], $_SESSION['success']);
+$info = $_SESSION['info'] ?? null;
+
+// Get Google registration data if available
+$googleData = $_SESSION['google_registration_data'] ?? null;
+if ($googleData) {
+    $prefillName = htmlspecialchars($googleData['name'] ?? '');
+    $prefillEmail = htmlspecialchars($googleData['email'] ?? '');
+    $googleId = $googleData['google_id'] ?? '';
+    $avatar = $googleData['avatar'] ?? '';
+} else {
+    $prefillName = htmlspecialchars($_POST['name'] ?? '');
+    $prefillEmail = htmlspecialchars($_POST['email'] ?? '');
+    $googleId = '';
+    $avatar = '';
+}
+
+// Don't clear session data yet - we need it for form validation
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +41,7 @@ unset($_SESSION['error'], $_SESSION['success']);
             --border-radius: 8px;
             --transition: all 0.3s ease;
             --success-green: #059669;
+            --info-blue: #1e40af;
         }
 
         * {
@@ -173,6 +190,11 @@ unset($_SESSION['error'], $_SESSION['success']);
             box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
         }
 
+        .form-control[readonly] {
+            background-color: #f8fafc;
+            color: #64748b;
+        }
+
         .select-control {
             appearance: none;
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
@@ -236,7 +258,6 @@ unset($_SESSION['error'], $_SESSION['success']);
             border-radius: var(--border-radius);
             margin-bottom: 20px;
             font-weight: 500;
-            display: none;
         }
 
         .alert-error {
@@ -249,6 +270,12 @@ unset($_SESSION['error'], $_SESSION['success']);
             background: #f0fdf4;
             color: var(--success-green);
             border: 1px solid #bbf7d0;
+        }
+
+        .alert-info {
+            background: #eff6ff;
+            color: var(--info-blue);
+            border: 1px solid #bfdbfe;
         }
 
         .password-toggle {
@@ -282,6 +309,12 @@ unset($_SESSION['error'], $_SESSION['success']);
         .strength-weak { color: #dc2626; }
         .strength-medium { color: #d97706; }
         .strength-strong { color: var(--success-green); }
+
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
 
         .loading {
             opacity: 0.7;
@@ -324,19 +357,24 @@ unset($_SESSION['error'], $_SESSION['success']);
         </a>
         
         <div class="auth-header">
-            <h1>Join HireTech</h1>
-            <p>Create your account to get started</p>
+            <h1><?= $googleData ? 'Complete Your Registration' : 'Join HireTech' ?></h1>
+            <p><?= $googleData ? 'Your Google information has been pre-filled' : 'Create your account to get started' ?></p>
         </div>
 
         <?php if($error): ?>
-            <div class="alert alert-error" id="alertBox"><?= htmlspecialchars($error) ?></div>
+            <div class="alert alert-error"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
 
         <?php if($success): ?>
-            <div class="alert alert-success" id="successAlert"><?= htmlspecialchars($success) ?></div>
+            <div class="alert alert-success"><?= htmlspecialchars($success) ?></div>
+        <?php endif; ?>
+
+        <?php if($info): ?>
+            <div class="alert alert-info"><?= htmlspecialchars($info) ?></div>
         <?php endif; ?>
 
         <!-- Google Sign-Up Option -->
+        <?php if(!$googleData): ?>
         <div class="google-signin-section">
             <a href="/auth/google" class="btn-google">
                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4xMDQ1NUg5LjE4VjEwLjg5NDVIMTMuOTlDMTMuNjcgMTIuNzE0NSAxMi4wOSAxMy45OTQ1IDEwLjE4IDEzLjk5NDVDNy44MyAxMy45OTQ1IDUuOTEgMTIuMDg0NSA1LjkxIDkuNzM0NTVDNS45MSA3LjM4NDU1IDcuODIgNS40NzQ1NSAxMC4xNyA1LjQ3NDU1QzExLjM0IDUuNDc0NTUgMTIuNCA1LjkyNDU1IDEzLjE3IDYuNjg0NTVMMTQuOTIgNC45MzQ1NUMxMy42NCAzLjczNDU1IDExLjkgMy4wMDQ1NSAxMC4xNyAzLjAwNDU1QzYuMzYgMy4wMDQ1NSAzLjI3IDYuMDk0NTUgMy4yNyA5LjkwNDU1QzMuMjcgMTMuNzE0NSA2LjM2IDE2LjgwNDUgMTAuMTcgMTYuODA0NUMxMy42MiAxNi44MDQ1IDE2LjM1IDE0LjI3NDUgMTYuMzUgMTAuMjA0NUMxNi4zNSA5LjU1NDU1IDE2LjI4IDkuMDA0NTUgMTYuNTEgOC40NTQ1NVoiIGZpbGw9IiM0Mjg1RjQiLz4KPC9zdmc+" 
@@ -347,17 +385,30 @@ unset($_SESSION['error'], $_SESSION['success']);
                 <span>or continue with email</span>
             </div>
         </div>
+        <?php endif; ?>
 
         <!-- Regular Email Registration Form -->
         <form id="registerForm" action="/auth/register" method="POST">
+            <!-- Hidden fields for Google data -->
+            <input type="hidden" name="google_id" value="<?= $googleId ?>">
+            <input type="hidden" name="avatar" value="<?= htmlspecialchars($avatar) ?>">
+
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required value="<?= htmlspecialchars($_POST['name'] ?? '') ?>">
+                <input type="text" id="name" name="name" class="form-control" 
+                       placeholder="Enter your full name" required 
+                       value="<?= $prefillName ?>">
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+                <input type="email" id="email" name="email" class="form-control" 
+                       placeholder="Enter your email" required 
+                       value="<?= $prefillEmail ?>" 
+                       <?= $googleData ? 'readonly' : '' ?>>
+                <?php if($googleData): ?>
+                    <div class="form-note">Email from your Google account</div>
+                <?php endif; ?>
             </div>
 
             <div class="form-group">
@@ -372,7 +423,8 @@ unset($_SESSION['error'], $_SESSION['success']);
             <div class="form-group">
                 <label for="password">Password</label>
                 <div class="password-toggle">
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Create a password" required>
+                    <input type="password" id="password" name="password" class="form-control" 
+                           placeholder="Create a password" required>
                     <button type="button" class="toggle-password" aria-label="Toggle password visibility">
                         👁️
                     </button>
@@ -383,7 +435,8 @@ unset($_SESSION['error'], $_SESSION['success']);
             <div class="form-group">
                 <label for="confirm_password">Confirm Password</label>
                 <div class="password-toggle">
-                    <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirm your password" required>
+                    <input type="password" id="confirm_password" name="confirm_password" 
+                           class="form-control" placeholder="Confirm your password" required>
                     <button type="button" class="toggle-password" aria-label="Toggle password visibility">
                         👁️
                     </button>
@@ -392,7 +445,7 @@ unset($_SESSION['error'], $_SESSION['success']);
             </div>
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
-                Create Account
+                <?= $googleData ? 'Complete Registration' : 'Create Account' ?>
             </button>
         </form>
 
@@ -404,20 +457,9 @@ unset($_SESSION['error'], $_SESSION['success']);
     <script>
         $(document).ready(function() {
             // Alert animation
-            const $alertBox = $('#alertBox');
-            const $successAlert = $('#successAlert');
-            
+            const $alertBox = $('.alert-error, .alert-success, .alert-info');
             if ($alertBox.length) {
-                $alertBox.show();
                 setTimeout(() => $alertBox.fadeOut(), 5000);
-            }
-            
-            if ($successAlert.length) {
-                $successAlert.show();
-                // Redirect to login page after 2 seconds if success message is shown
-                setTimeout(() => {
-                    window.location.href = '/login';
-                }, 2000);
             }
 
             // Password visibility toggle
@@ -495,3 +537,7 @@ unset($_SESSION['error'], $_SESSION['success']);
     </script>
 </body>
 </html>
+<?php
+// Clear session data only after the form is displayed
+unset($_SESSION['error'], $_SESSION['success'], $_SESSION['info']);
+?>

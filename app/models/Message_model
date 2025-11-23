@@ -1,0 +1,96 @@
+<?php
+defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
+
+class Message_model extends Model
+{
+    protected $table = 'messages';
+
+    public function create($data)
+    {
+        $data['created_at'] = date('Y-m-d H:i:s');
+        return $this->db->table($this->table)->insert($data);
+    }
+
+    public function find($id, $with_deleted = false)
+    {
+        $result = $this->db->table($this->table)
+            ->where('id', $id)
+            ->get();
+        return isset($result[0]) ? $result[0] : $result;
+    }
+
+    public function getConversation($user1Id, $user2Id, $jobId = null)
+    {
+        $query = $this->db->table($this->table);
+        
+        // Use proper parameter binding for complex conditions
+        $query->where('(sender_id = ? AND receiver_id = ?) OR (sender_id = ? AND receiver_id = ?)', 
+                     [$user1Id, $user2Id, $user2Id, $user1Id]);
+            
+        if ($jobId) {
+            $query->where('job_id', $jobId);
+        }
+        
+        $result = $query->order_by('created_at', 'ASC')->get();
+        return is_array($result) && isset($result[0]) ? $result : ($result ? [$result] : []);
+    }
+
+    public function getUserConversations($userId)
+{
+    // Get distinct conversation partners
+    $partnersQuery = $this->db->table('messages')
+        ->select('DISTINCT 
+                 CASE 
+                     WHEN sender_id = ? THEN receiver_id 
+                     ELSE sender_id 
+                 END as partner_id,
+                 job_id', [$userId])
+        ->where('sender_id', $userId)
+        ->or_where('receiver_id', $userId)
+        ->get();
+    
+    if (empty($partnersQuery)) {
+        return [];
+    }
+    
+    $conversations = [];
+    foreach ($partnersQuery as $partner) {
+        $latestMessage = $this->db->table('messages m')
+            ->select('m.*, u.name as other_user_name, j.title as job_title')
+            ->join('users u', 'u.id = ?', [$partner['partner_id']])
+            ->left_join('jobs j', 'j.id = m.job_id')
+            ->where('(m.sender_id = ? AND m.receiver_id = ?) OR (m.sender_id = ? AND m.receiver_id = ?)', 
+                   [$userId, $partner['partner_id'], $partner['partner_id'], $userId])
+            ->where('m.job_id', $partner['job_id'])
+            ->order_by('m.created_at', 'DESC')
+            ->limit(1)
+            ->get();
+        
+        if (!empty($latestMessage)) {
+            $conversations[] = is_array($latestMessage) ? $latestMessage[0] : $latestMessage;
+        }
+    }
+    
+    // Sort by latest message
+    usort($conversations, function($a, $b) {
+        return strtotime($b['created_at']) - strtotime($a['created_at']);
+    });
+    
+    return $conversations;
+}
+    public function markAsRead($messageId)
+    {
+        return $this->db->table($this->table)
+            ->where('id', $messageId)
+            ->update(['is_read' => 1]);
+    }
+
+    public function getUnreadCount($userId)
+    {
+        $result = $this->db->table($this->table)
+            ->where('receiver_id', $userId)
+            ->where('is_read', 0)
+            ->count();
+        return $result;
+    }
+}

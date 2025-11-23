@@ -1,97 +1,66 @@
 <?php
-defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
-
 class User_model extends Model
 {
     protected $table = 'users';
 
-    /**
-     * Create a new user account
-     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function create(array $data)
     {
-        // Hash password if provided and not empty
         if(isset($data['password']) && !empty($data['password'])) {
             $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
         }
         
         $data['created_at'] = date('Y-m-d H:i:s');
-
-        $inserted = $this->db->table($this->table)->insert($data);
-
-        return $inserted ? true : false;
+        return $this->db->table($this->table)->insert($data);
     }
 
-    /**
-     * Find user by email
-     */
+    public function find($id, $with_deleted = false)
+    {
+        $result = $this->db->table($this->table)
+            ->where('id', $id)
+            ->get();
+        return isset($result[0]) ? $result[0] : $result;
+    }
+
     public function findByEmail(string $email)
     {
         $result = $this->db->table($this->table)
-                           ->where('email', $email)
-                           ->get();
-
-        if (empty($result)) return null;
-
-        // Handle array of rows or single row
-        if (isset($result[0])) return $result[0];
-
-        return $result;
+            ->where('email', $email)
+            ->get();
+        return isset($result[0]) ? $result[0] : $result;
     }
 
-    /**
-     * Check if email exists
-     */
     public function emailExists(string $email): bool
     {
         $result = $this->db->table($this->table)
-                           ->where('email', $email)
-                           ->get();
-
-        if (!$result) return false;
-
-        // Return true if at least one row found
-        if (isset($result[0])) return true;
-
+            ->where('email', $email)
+            ->get();
         return !empty($result);
     }
 
-    /**
-     * Find user by Google ID
-     */
     public function findByGoogleId(string $googleId)
     {
         $result = $this->db->table($this->table)
-                           ->where('google_id', $googleId)
-                           ->get();
-
-        if (empty($result)) return null;
-
-        if (isset($result[0])) return $result[0];
-
-        return $result;
+            ->where('google_id', $googleId)
+            ->get();
+        return isset($result[0]) ? $result[0] : $result;
     }
 
-    /**
-     * Update user data
-     */
     public function updateUser(int $userId, array $data)
     {
         return $this->db->table($this->table)
-                        ->where('id', $userId)
-                        ->update($data);
+            ->where('id', $userId)
+            ->update($data);
     }
 
-    /**
-     * Create or update user from Google OAuth
-     */
     public function createOrUpdateGoogleUser(array $googleData)
     {
-        // Check if user exists by google_id
         $existingUser = $this->findByGoogleId($googleData['google_id']);
-        
         if($existingUser) {
-            // Update existing user
             $this->updateUser($existingUser['id'], [
                 'name' => $googleData['name'],
                 'email' => $googleData['email'],
@@ -100,10 +69,8 @@ class User_model extends Model
             return $existingUser;
         }
         
-        // Check if user exists by email
         $existingUserByEmail = $this->findByEmail($googleData['email']);
         if($existingUserByEmail) {
-            // Update existing user with Google ID
             $this->updateUser($existingUserByEmail['id'], [
                 'google_id' => $googleData['google_id'],
                 'avatar' => $googleData['avatar']
@@ -111,39 +78,151 @@ class User_model extends Model
             return $existingUserByEmail;
         }
         
-        // Create new user
         $userData = [
             'name' => $googleData['name'],
             'email' => $googleData['email'],
             'google_id' => $googleData['google_id'],
             'avatar' => $googleData['avatar'],
-            'role' => 'job_seeker', // Default role
-            'password' => null, // No password for Google users
+            'role' => 'job_seeker',
+            'password' => null,
             'created_at' => date('Y-m-d H:i:s')
         ];
         
         $inserted = $this->create($userData);
-        if($inserted) {
-            // Get the newly created user
-            return $this->findByGoogleId($googleData['google_id']);
-        }
-        
-        return false;
+        return $inserted ? $this->findByGoogleId($googleData['google_id']) : false;
     }
 
-    /**
-     * Get user by ID
-     */
     public function findById(int $userId)
     {
+        return $this->find($userId);
+    }
+
+    public function getUserById($id)
+    {
         $result = $this->db->table($this->table)
-                           ->where('id', $userId)
-                           ->get();
+            ->where('id', $id)
+            ->get();
+        return isset($result[0]) ? $result[0] : $result;
+    }
 
-        if (empty($result)) return null;
+    public function isJobSeeker($userId)
+    {
+        $user = $this->find($userId);
+        return $user && $user['role'] === 'job_seeker';
+    }
 
-        if (isset($result[0])) return $result[0];
+    public function isEmployer($userId)
+    {
+        $user = $this->find($userId);
+        return $user && $user['role'] === 'employer';
+    }
 
+    public function countByRole($role)
+    {
+        $result = $this->db->table($this->table)
+            ->where('role', $role)
+            ->count();
         return $result;
     }
+
+    public function getRecentUsers($limit = 5)
+    {
+        $result = $this->db->table($this->table)
+            ->order_by('created_at', 'DESC')
+            ->limit($limit)
+            ->get();
+        return is_array($result) && isset($result[0]) ? $result : ($result ? [$result] : []);
+    }
+
+    public function getUserProfile($userId)
+    {
+        $result = $this->db->table('user_profiles')
+            ->where('user_id', $userId)
+            ->get();
+        return isset($result[0]) ? $result[0] : $result;
+    }
+
+    public function updateProfile($userId, $data)
+    {
+        // Check if profile exists
+        $existing = $this->getUserProfile($userId);
+        if ($existing) {
+            return $this->db->table('user_profiles')
+                ->where('user_id', $userId)
+                ->update($data);
+        } else {
+            $data['user_id'] = $userId;
+            return $this->db->table('user_profiles')->insert($data);
+        }
+    }
+
+    // Add to User_model class
+
+/**
+ * Count all users - FIXED VERSION
+ */
+public function countAllUsers()
+{
+    try {
+        $result = $this->db->table($this->table)->get_all();
+        return is_array($result) ? count($result) : 0;
+    } catch (Exception $e) {
+        error_log("Error in countAllUsers: " . $e->getMessage());
+        return 0;
+    }
+}
+
+
+/**
+ * Delete user (admin function)
+ */
+public function deleteUser($userId)
+{
+    try {
+        // Delete related records first
+        $this->db->table('applications')->where('user_id', $userId)->delete();
+        $this->db->table('saved_jobs')->where('user_id', $userId)->delete();
+        
+        // For employers, delete their jobs and related applications
+        $user = $this->find($userId);
+        if ($user && $user['role'] === 'employer') {
+            $jobs = $this->db->table('jobs')->where('user_id', $userId)->get_all();
+            foreach ($jobs as $job) {
+                $this->db->table('applications')->where('job_id', $job['id'])->delete();
+                $this->db->table('saved_jobs')->where('job_id', $job['id'])->delete();
+            }
+            $this->db->table('jobs')->where('user_id', $userId)->delete();
+        }
+        
+        // Delete user profiles
+        $this->db->table('user_profiles')->where('user_id', $userId)->delete();
+        $this->db->table('company_profiles')->where('user_id', $userId)->delete();
+        
+        // Finally delete the user
+        return $this->db->table($this->table)
+            ->where('id', $userId)
+            ->delete();
+    } catch (Exception $e) {
+        error_log("Error in deleteUser: " . $e->getMessage());
+        return false;
+    }
+}
+
+/**
+ * Get all users with pagination - FIXED VERSION
+ */
+public function getAllUsers($limit = 10, $offset = 0)
+{
+    try {
+        return $this->db->table($this->table)
+            ->order_by('created_at', 'DESC')
+            ->limit($limit, $offset)
+            ->get_all() ?: [];
+    } catch (Exception $e) {
+        error_log("Error in getAllUsers: " . $e->getMessage());
+        return [];
+    }
+}
+
+
 }

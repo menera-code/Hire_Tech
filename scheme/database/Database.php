@@ -1289,6 +1289,7 @@ class Database {
                 $this->bindValues ?? [],
                 $e
             );
+            return null;
         }
     }
 
@@ -1314,6 +1315,7 @@ class Database {
                 $this->bindValues ?? [],
                 $e
             );
+            return [];
         }
     }
 
