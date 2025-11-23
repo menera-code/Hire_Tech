@@ -148,5 +148,3 @@ $router->get('/dashboard/cancel_application', 'DashboardController@cancel_applic
 // Add this route
 // Add this route for the application page
 $router->get('/dashboard/application', 'DashboardController@application');
-// Add this route for the application page (singular)
-$router->get('/dashboard/application', 'DashboardController@application');

@@ -58,15 +58,27 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 */
 
 $database['main'] = array(
-    'driver'   => 'mysql',        // MySQL driver
-    'hostname' => 'localhost',     // XAMPP default
-    'port'     => '3306',          // default MySQL port
-    'username' => 'root',          // XAMPP default user
-    'password' => '',              // XAMPP default password is empty
-    'database' => 'hiretech_db',      // name of your database
-    'charset'  => 'utf8',          // charset for database
-    'dbprefix' => '',              // optional, e.g., 'ht_' for all tables
-    'path'     => ''               // only used for SQLite, leave empty
+    'driver'   => 'mysql',        
+    'hostname' => 'sql104.infinityfree.com',  // Your InfinityFree MySQL host
+    'port'     => '3306',          
+    'username' => 'if0_40488563',       // Your InfinityFree database user
+    'password' => 'menera0531', // Your InfinityFree database password
+    'database' => 'if0_40488563_hiretech_db', // Your actual InfinityFree database name
+    'charset'  => 'utf8',          
+    'dbprefix' => '',              
+    'path'     => ''               
 );
+//$database['main'] = array(
+    //'driver'   => 'mysql',        // MySQL driver
+   // 'hostname' => 'localhost',     // XAMPP default
+    //'port'     => '3306',          // default MySQL port
+    //'username' => 'root',          // XAMPP default user
+   //'password' => '',              // XAMPP default password is empty
+   // 'database' => 'hiretech_db',      // name of your database
+   // 'charset'  => 'utf8',          // charset for database
+   // 'dbprefix' => '',              // optional, e.g., 'ht_' for all tables
+    //'path'     => ''               // only used for SQLite, leave empty
+//);
+
 
 ?>
