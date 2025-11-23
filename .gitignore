@@ -1,19 +1,41 @@
+# Environment files
+.env
+.env.local
+.env.production
+
+# Uploads directory
+uploads/
+
+# Log files
+*.log
+logs/
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-app/vendor/*
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
 
-runtime/*
-!runtime/.htaccess
-!runtime/index.html
+# XAMPP
+htdocs/
+tmp/
 
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
+# Composer
+vendor/
+composer.lock
 
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
+# Cache
+app/cache/
+
+# Config files with secrets
+app/config/google_oauth.php
+app/config/google-calendar-credentials.json

@@ -53,13 +53,17 @@ class AuthController extends Controller
         error_log("Google Client initialization failed: " . $e->getMessage());
     }
 }
-  private function getGoogleConfig() {
+
+
+ private function getGoogleConfig() {
+    // Environment variables are now loaded automatically via autoload.php
     return [
-        'client_id' => '255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com',
-        'client_secret' => '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',
-        'redirect_uri' => 'http://localhost:3000/auth/google_callback' // Make sure this is EXACT
+        'client_id' => $_ENV['GOOGLE_CLIENT_ID'] ?? '',
+        'client_secret' => $_ENV['GOOGLE_CLIENT_SECRET'] ?? '',
+        'redirect_uri' => $_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost:3000/auth/google_callback'
     ];
 }
+
 
     /**
      * Show login page
