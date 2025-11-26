@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script 
+        id="Cookiebot" 
+        src="https://consent.cookiebot.com/uc.js" 
+        data-cbid="b14db11a-de3c-480c-a46d-e585a6e349c7" 
+        data-blockingmode="auto" 
+        type="text/javascript">
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT JobHub - Home</title>
