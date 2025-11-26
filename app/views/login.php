@@ -286,6 +286,29 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
             padding: 0 15px;
             position: relative;
         }
+
+        .btn-facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #1877F2;
+            border-radius: var(--border-radius);
+            background: #1877F2;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        .btn-facebook:hover {
+            background: #166fe5;
+            border-color: #166fe5;
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body>
@@ -304,6 +327,21 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
         <?php endif; ?>
 
         <form id="loginForm" action="/auth/login" method="POST">
+            <!-- Social Login Buttons -->
+            <div class="google-signin-section">
+                <a href="/auth/google" class="btn-google">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4xMDQ1NUg5LjE4VjEwLjg5NDVIMTMuOTlDMTMuNjcgMTIuNzE0NSAxMi4wOSAxMy45OTQ1IDEwLjE4IDEzLjk5NDVDNy44MyAxMy45OTQ1IDUuOTEgMTIuMDg0NSA1LjkxIDkuNzM0NTVDNS45MSA3LjM4NDU1IDcuODIgNS40NzQ1NSAxMC4xNyA1LjQ3NDU1QzExLjM0IDUuNDc0NTUgMTIuNCA1LjkyNDU1IDEzLjE3IDYuNjg0NTVMMTQuOTIgNC45MzQ1NUMxMy42NCAzLjczNDU1IDExLjkgMy4wMDQ1NSAxMC4xNyAzLjAwNDU1QzYuMzYgMy4wMDQ1NSAzLjI3IDYuMDk0NTUgMy4yNyA5LjkwNDU1QzMuMjcgMTMuNzE0NSA2LjM2IDE2LjgwNDUgMTAuMTcgMTYuODA0NUMxMy42MiAxNi44MDQ1IDE2LjM1IDE0LjI3NDUgMTYuMzUgMTAuMjA0NUMxNi4zNSA5LjU1NDU1IDE2LjI4IDkuMDA0NTUgMTYuNTEgOC40NTQ1NVoiIGZpbGw9IiM0Mjg1RjQiLz4KPC9zdmc+" 
+                        alt="Google" width="18" height="18">
+                    Continue with Google
+                </a>
+                
+                
+                
+                <div class="divider">
+                    <span>or</span>
+                </div>
+            </div>
+
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
@@ -316,18 +354,6 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
                     <button type="button" class="toggle-password" aria-label="Toggle password visibility">
                         👁️
                     </button>
-                </div>
-            </div>
-
-            <!-- Add this to the login form, before the email/password fields -->
-            <div class="google-signin-section">
-                <a href="/auth/google" class="btn btn-google">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4xMDQ1NUg5LjE4VjEwLjg5NDVIMTMuOTlDMTMuNjcgMTIuNzE0NSAxMi4wOSAxMy45OTQ1IDEwLjE4IDEzLjk5NDVDNy44MyAxMy45OTQ1IDUuOTEgMTIuMDg0NSA1LjkxIDkuNzM0NTVDNS45MSA3LjM4NDU1IDcuODIgNS40NzQ1NSAxMC4xNyA1LjQ3NDU1QzExLjM0IDUuNDc0NTUgMTIuNCA1LjkyNDU1IDEzLjE3IDYuNjg0NTVMMTQuOTIgNC45MzQ1NUMxMy42NCAzLjczNDU1IDExLjkgMy4wMDQ1NSAxMC4xNyAzLjAwNDU1QzYuMzYgMy4wMDQ1NSAzLjI3IDYuMDk0NTUgMy4yNyA5LjkwNDU1QzMuMjcgMTMuNzE0NSA2LjM2IDE2LjgwNDUgMTAuMTcgMTYuODA0NUMxMy42MiAxNi44MDQ1IDE2LjM1IDE0LjI3NDUgMTYuMzUgMTAuMjA0NUMxNi4zNSA5LjU1NDU1IDE2LjI4IDkuMDA0NTUgMTYuNTEgOC40NTQ1NVoiIGZpbGw9IiM0Mjg1RjQiLz4KPC9zdmc+" 
-                        alt="Google" width="18" height="18">
-                    Continue with Google
-                </a>
-                <div class="divider">
-                    <span>or</span>
                 </div>
             </div>
 

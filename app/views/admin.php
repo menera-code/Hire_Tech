@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Admin Dashboard',
+            page_location: window.location.href,
+            user_id: 'admin_user' // Replace with actual admin user ID if available
+        });
+    </script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -572,17 +587,158 @@
     </div>
 
     <script>
-        // Optional: Add confirmation for logout
         document.addEventListener('DOMContentLoaded', function() {
+            // Track admin dashboard load with enhanced data
+            gtag('event', 'admin_dashboard_view', {
+                total_users: <?php echo $stats['total_users'] ?? 0; ?>,
+                total_employers: <?php echo $stats['total_employers'] ?? 0; ?>,
+                total_job_seekers: <?php echo $stats['total_job_seekers'] ?? 0; ?>,
+                total_jobs: <?php echo $stats['total_jobs'] ?? 0; ?>,
+                total_applications: <?php echo $stats['total_applications'] ?? 0; ?>,
+                recent_users: <?php echo $stats['recent_users'] ?? 0; ?>,
+                platform: 'HireTech Admin'
+            });
+
+            // Track navigation menu clicks
+            const navLinks = document.querySelectorAll('.nav-btn');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const menuItem = this.textContent.trim();
+                    const menuUrl = this.getAttribute('href');
+                    
+                    gtag('event', 'admin_navigation', {
+                        menu_item: menuItem,
+                        menu_url: menuUrl,
+                        menu_category: 'main_navigation'
+                    });
+                });
+            });
+
+            // Track quick action clicks
+            const quickActions = document.querySelectorAll('.quick-action-btn');
+            quickActions.forEach(action => {
+                action.addEventListener('click', function(e) {
+                    const actionName = this.querySelector('strong').textContent;
+                    const actionUrl = this.getAttribute('href');
+                    const actionDescription = this.querySelector('p').textContent;
+                    
+                    gtag('event', 'admin_quick_action', {
+                        action_name: actionName,
+                        action_description: actionDescription,
+                        action_url: actionUrl,
+                        action_type: 'quick_action'
+                    });
+                });
+            });
+
+            // Track view all buttons
+            const viewAllButtons = document.querySelectorAll('.btn-primary');
+            viewAllButtons.forEach(button => {
+                if (button.textContent.includes('View All')) {
+                    button.addEventListener('click', function(e) {
+                        const section = this.closest('.admin-section').querySelector('h2').textContent;
+                        
+                        gtag('event', 'admin_view_all_click', {
+                            section: section,
+                            button_text: this.textContent.trim(),
+                            button_type: 'view_all'
+                        });
+                    });
+                }
+            });
+
+            // Track stat card interactions (hover and clicks)
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    const statTitle = this.querySelector('p').textContent;
+                    const statValue = this.querySelector('h3').textContent;
+                    
+                    gtag('event', 'admin_stat_hover', {
+                        stat_title: statTitle,
+                        stat_value: statValue
+                    });
+                });
+            });
+
+            // Enhanced logout tracking
             const logoutBtn = document.querySelector('a[href="/admin/logout"]');
             if (logoutBtn) {
                 logoutBtn.addEventListener('click', function(e) {
+                    // Track logout attempt
+                    gtag('event', 'admin_logout_attempt', {
+                        logout_method: 'button_click',
+                        logout_location: 'dashboard'
+                    });
+                    
+                    // Show confirmation dialog
                     if (!confirm('Are you sure you want to logout?')) {
                         e.preventDefault();
+                        // Track logout cancellation
+                        gtag('event', 'admin_logout_cancelled', {
+                            cancellation_reason: 'user_choice'
+                        });
+                    } else {
+                        // Track confirmed logout
+                        gtag('event', 'admin_logout_confirmed', {
+                            logout_time: new Date().toISOString()
+                        });
                     }
                 });
             }
+
+            // Track table row interactions
+            const tableRows = document.querySelectorAll('.data-table tr');
+            tableRows.forEach((row, index) => {
+                if (index > 0) { // Skip header row
+                    row.addEventListener('click', function() {
+                        const table = this.closest('table');
+                        const section = this.closest('.admin-section').querySelector('h2').textContent;
+                        const rowData = Array.from(this.cells).map(cell => cell.textContent.trim());
+                        
+                        gtag('event', 'admin_table_row_click', {
+                            section: section,
+                            row_data: rowData.slice(0, 2), // First two columns for context
+                            row_index: index
+                        });
+                    });
+                }
+            });
+
+            // Track page visibility changes (when admin switches tabs/windows)
+            document.addEventListener('visibilitychange', function() {
+                if (document.visibilityState === 'visible') {
+                    gtag('event', 'admin_dashboard_refocus', {
+                        time_away: 'unknown', // You could track this with more complex logic
+                        refocus_time: new Date().toISOString()
+                    });
+                }
+            });
+
+            // Track time spent on dashboard (basic implementation)
+            let startTime = new Date();
+            window.addEventListener('beforeunload', function() {
+                const endTime = new Date();
+                const timeSpent = Math.round((endTime - startTime) / 1000); // seconds
+                
+                gtag('event', 'admin_session_duration', {
+                    session_duration_seconds: timeSpent,
+                    page: 'dashboard'
+                });
+            });
         });
+
+        // Function to track custom admin events from other parts of the application
+        function trackAdminEvent(eventName, eventParams) {
+            gtag('event', eventName, {
+                ...eventParams,
+                admin_platform: 'HireTech',
+                user_role: 'administrator'
+            });
+        }
+
+        // Example usage for future enhancements:
+        // trackAdminEvent('admin_bulk_action', { action: 'user_delete', count: 5 });
     </script>
 </body>
 </html>

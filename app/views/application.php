@@ -1060,6 +1060,585 @@ if ($role == 'job_seeker') {
         .calendar-link:hover {
             color: var(--primary-dark);
         }
+
+
+       /* Additional styles for the resume preview modal */
+#resumePreviewModal .modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#pdfViewerContainer {
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #resumePreviewModal .modal-content {
+        width: 95%;
+        height: 95vh;
+        margin: 10px;
+    }
+    
+    .resume-actions {
+        flex-direction: column;
+    }
+}
+
+/* Calendar highlight styles */
+.calendar-highlight {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border: 2px solid var(--primary);
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calendar-header .month-year {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.calendar-header .interview-date {
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-weight: 600;
+    color: var(--gray-600);
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.calendar-day.other-month {
+    color: var(--gray-400);
+}
+
+.calendar-day.today {
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.calendar-day.interview-day {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(67, 97, 238, 0.3);
+}
+
+.calendar-day:hover {
+    background: var(--gray-100);
+}
+
+/* Map container styles */
+.interview-map-container {
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.interview-map {
+    height: 200px;
+    width: 100%;
+    background: var(--gray-100);
+}
+
+.map-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-100);
+    color: var(--gray-500);
+    flex-direction: column;
+}
+
+.map-placeholder i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Interview timeline */
+.interview-timeline {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(67, 97, 238, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-label {
+    font-weight: 600;
+    color: var(--gray-700);
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.timeline-value {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Countdown timer */
+.interview-countdown {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.countdown-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.countdown-timer {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Courier New', monospace;
+}
+
+.countdown-unit {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+
+/* Enhanced Interview Details Modal */
+#interviewDetailsModal .modal-content {
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.interview-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 25px;
+    border-radius: 12px 12px 0 0;
+    margin: -30px -30px 25px -30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.interview-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.interview-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.interview-subtitle {
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.interview-status-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+/* Interview Timeline */
+.interview-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.timeline-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(67, 97, 238, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-bottom: 20px;
+    border-left: 2px solid var(--gray-200);
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.timeline-label {
+    font-weight: 600;
+    color: var(--gray-700);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.timeline-value {
+    color: var(--dark);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.timeline-note {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Interview Actions Grid */
+.interview-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.interview-action-card {
+    background: var(--gray-50);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.interview-action-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.interview-action-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 12px;
+    background: rgba(67, 97, 238, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.interview-action-title {
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.interview-action-desc {
+    color: var(--gray-600);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Preparation Tips */
+.preparation-tips {
+    background: linear-gradient(135deg, #f8f9ff, #f0f4ff);
+    border: 1px solid rgba(67, 97, 238, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.preparation-tips h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+.tip-icon {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+.tip-content {
+    flex: 1;
+}
+
+.tip-title {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.tip-desc {
+    color: var(--gray-600);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Map Container */
+.interview-map-container {
+    margin: 25px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.interview-map {
+    height: 250px;
+    width: 100%;
+    background: var(--gray-100);
+}
+
+.map-placeholder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-100);
+    color: var(--gray-500);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-placeholder i {
+    font-size: 2.5rem;
+    opacity: 0.5;
+}
+
+/* Notes Section */
+.interview-notes-section {
+    background: var(--gray-50);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid var(--info);
+}
+
+.notes-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.notes-content {
+    color: var(--gray-700);
+    line-height: 1.6;
+    white-space: pre-line;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+}
+
+/* Contact Information */
+.contact-section {
+    background: var(--gray-50);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid var(--warning);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+}
+
+.contact-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary);
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    margin-bottom: 2px;
+}
+
+.contact-value {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .interview-header {
+        padding: 20px;
+        margin: -20px -20px 20px -20px;
+    }
+    
+    .interview-status-badge {
+        position: static;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .timeline-content {
+        border-left: none;
+        padding-left: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--gray-200);
+    }
+    
+    .timeline-content::before {
+        display: none;
+    }
+    
+    .interview-actions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 <body>
@@ -1645,8 +2224,14 @@ if ($role == 'job_seeker') {
                            download="resume_<?= htmlspecialchars($applicant['name']) ?>.pdf">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
+                    <div>-------------------------------------------------------OR-------------------------------------------------------</div>
+
+                                    <!-- Preview Button -->
+                        <a class="btn btn-info" onclick="openResumePreview('<?= htmlspecialchars($applicant['profile']['resume_file']) ?>', '<?= htmlspecialchars($applicant['name']) ?>')">
+                            <i class="fas fa-eye"></i> Preview Resume
+                        </a>
                         <p style="margin-top: 10px; color: var(--gray-600); font-size: 0.9rem;">
-                            Click to download the applicant's resume
+                            Click to download or preview the applicant's resume
                         </p>
                     </div>
                 </div>
@@ -1664,6 +2249,52 @@ if ($role == 'job_seeker') {
     </div>
 </div>
 <?php endif; ?>
+
+
+<!-- Resume Preview Modal -->
+<div id="resumePreviewModal" class="modal">
+    <div class="modal-content" style="max-width: 900px; height: 90vh;">
+        <div class="modal-header">
+            <h3>Resume Preview - <span id="resumeApplicantName"></span></h3>
+            <button class="modal-close" onclick="closeResumePreview()">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 0; height: calc(100% - 120px);">
+            <!-- PDF Viewer Container -->
+            <div id="pdfViewerContainer" style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; background: var(--gray-100);">
+                <div id="pdfViewer" style="width: 100%; height: 100%;">
+                    <!-- PDF will be displayed here -->
+                    <iframe id="pdfFrame" style="width: 100%; height: 100%; border: none; border-radius: 0 0 8px 8px;" 
+                            frameborder="0"></iframe>
+                </div>
+                
+                <!-- Fallback for non-PDF files -->
+                <div id="fileFallback" style="display: none; text-align: center; padding: 40px;">
+                    <i class="fas fa-file fa-3x" style="color: var(--gray-400); margin-bottom: 15px;"></i>
+                    <h4 style="color: var(--gray-600); margin-bottom: 10px;">File Preview Not Available</h4>
+                    <p style="color: var(--gray-500);">This file type cannot be previewed in the browser.</p>
+                    <a href="#" id="fallbackDownload" class="btn btn-primary" style="margin-top: 15px;">
+                        <i class="fas fa-download"></i> Download File
+                    </a>
+                </div>
+                
+                <!-- Loading State -->
+                <div id="pdfLoading" style="display: none; text-align: center;">
+                    <i class="fas fa-spinner fa-spin fa-2x" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <p style="color: var(--gray-600);">Loading resume...</p>
+                </div>
+            </div>
+        </div>
+       <div class="modal-footer" style="display: flex; gap: 10px; justify-content: space-between; align-items: center; padding: 20px 24px; border-top: 1px solid var(--gray-200);">
+    <button class="btn btn-secondary" onclick="closeResumePreview()" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; border: none; border-radius: 8px; background: var(--gray-200); color: var(--gray-700); cursor: pointer; font-weight: 500; transition: all 0.3s ease;">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+    
+    <a href="#" id="previewDownloadBtn" class="btn btn-primary" target="_blank" download style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; border: none; border-radius: 8px; background: var(--primary); color: white; text-decoration: none; cursor: pointer; font-weight: 500; transition: all 0.3s ease;">
+        <i class="fas fa-download"></i> Download Resume
+    </a>
+</div>
+    </div>
+</div>
 
     <!-- Remove Application Confirmation Modal -->
     <?php if ($show_remove_modal && $remove_application): ?>
@@ -1798,33 +2429,34 @@ if ($role == 'job_seeker') {
     </div>
     <?php endif; ?>
 
-    <!-- Interview Details Modal - Job Seeker Only -->
-    <?php if ($role == 'job_seeker'): ?>
-    <div class="modal" id="interviewDetailsModal">
-        <div class="modal-content" style="max-width: 600px;">
-            <div class="modal-header">
-                <h3>Interview Details</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div id="interviewDetailsContent">
-                    <!-- Interview details will be loaded here via AJAX -->
-                    <div class="loading-spinner" style="text-align: center; padding: 40px;">
-                        <i class="fas fa-spinner fa-spin fa-2x" style="color: var(--primary);"></i>
-                        <p style="margin-top: 15px;">Loading interview details...</p>
-                    </div>
+<!-- Interview Details Modal - Job Seeker Only -->
+<?php if ($role == 'job_seeker'): ?>
+<div class="modal" id="interviewDetailsModal">
+    <div class="modal-content" style="max-width: 700px;">
+        <div class="modal-header">
+            <h3>Interview Details</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="interviewDetailsContent">
+                <!-- Interview details will be loaded here via AJAX -->
+                <div class="loading-spinner" style="text-align: center; padding: 40px;">
+                    <i class="fas fa-spinner fa-spin fa-2x" style="color: var(--primary);"></i>
+                    <p style="margin-top: 15px;">Loading interview details...</p>
                 </div>
             </div>
-            <div class="modal-footer" style="margin-top: 20px; display: flex; gap: 10px; justify-content: flex-end;">
-                <button type="button" class="btn btn-secondary" id="closeInterviewDetails">
-                    <i class="fas fa-times"></i> Close
-                </button>
-                <a href="#" id="addToCalendarBtn" class="btn btn-primary" target="_blank" style="display: none;">
-                    <i class="fas fa-calendar-plus"></i> Add to Calendar
-                </a>
-            </div>
+        </div>
+        <div class="modal-footer" style="margin-top: 20px; display: flex; gap: 10px; justify-content: flex-end;">
+            <button type="button" class="btn btn-secondary" id="closeInterviewDetails">
+                <i class="fas fa-times"></i> Close
+            </button>
+            <a href="#" id="addToCalendarBtn" class="btn btn-primary" target="_blank" style="display: none;">
+                <i class="fas fa-calendar-plus"></i> Add to Calendar
+            </a>
         </div>
     </div>
+</div>
+
     <?php endif; ?>
 
     <script>
@@ -2721,6 +3353,460 @@ function populateRescheduleModal(interview) {
 // Reset modal title when closing
 $('.modal-close, #cancelInterview').on('click', function() {
     $('.modal-header h3').text('Schedule Interview'); // Reset to default title
+});
+
+
+function openResumePreview(resumeFile, applicantName) {
+    const modal = document.getElementById('resumePreviewModal');
+    const pdfFrame = document.getElementById('pdfFrame');
+    const fallbackSection = document.getElementById('fileFallback');
+    const pdfViewer = document.getElementById('pdfViewer');
+    const loadingSection = document.getElementById('pdfLoading');
+    const applicantNameSpan = document.getElementById('resumeApplicantName');
+    const downloadBtn = document.getElementById('previewDownloadBtn');
+    const fallbackDownload = document.getElementById('fallbackDownload');
+    
+    // Set applicant name
+    applicantNameSpan.textContent = applicantName;
+    
+    // Show loading state
+    pdfViewer.style.display = 'none';
+    fallbackSection.style.display = 'none';
+    loadingSection.style.display = 'block';
+    
+    // Show modal
+    modal.classList.add('active');
+    
+    // Check if file is PDF
+    const fileExtension = resumeFile.split('.').pop().toLowerCase();
+    
+    if (fileExtension === 'pdf') {
+        // For PDF files, use iframe embedding
+        setTimeout(() => {
+            pdfFrame.src = '/' + resumeFile + '#view=FitH';
+            pdfViewer.style.display = 'block';
+            loadingSection.style.display = 'none';
+        }, 500);
+        
+        // Set download link
+        downloadBtn.href = '/' + resumeFile;
+        downloadBtn.setAttribute('download', 'resume_' + applicantName + '.pdf');
+    } else {
+        // For non-PDF files, show fallback
+        setTimeout(() => {
+            pdfViewer.style.display = 'none';
+            fallbackSection.style.display = 'block';
+            loadingSection.style.display = 'none';
+            
+            // Set fallback download link
+            fallbackDownload.href = '/' + resumeFile;
+            fallbackDownload.setAttribute('download', 'resume_' + applicantName + '.' + fileExtension);
+        }, 500);
+        
+        // Set download link for non-PDF as well
+        downloadBtn.href = '/' + resumeFile;
+        downloadBtn.setAttribute('download', 'resume_' + applicantName + '.' + fileExtension);
+    }
+}
+
+function closeResumePreview() {
+    const modal = document.getElementById('resumePreviewModal');
+    const pdfFrame = document.getElementById('pdfFrame');
+    
+    // Hide modal
+    modal.classList.remove('active');
+    
+    // Reset iframe source
+    setTimeout(() => {
+        pdfFrame.src = '';
+    }, 300);
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById('resumePreviewModal');
+    if (e.target === modal) {
+        closeResumePreview();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeResumePreview();
+    }
+});
+
+
+// Enhanced displayInterviewDetails function with calendar and map
+function displayInterviewDetails(interview) {
+    let html = '';
+    
+    // Countdown timer section
+    if (interview.interview_date) {
+        const interviewDate = new Date(interview.interview_date);
+        const now = new Date();
+        const timeDiff = interviewDate - now;
+        
+        if (timeDiff > 0) {
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            
+            html += `
+                <div class="interview-countdown">
+                    <div class="countdown-title">Interview in</div>
+                    <div class="countdown-timer">
+                        ${days}<span class="countdown-unit">days</span> 
+                        ${hours}<span class="countdown-unit">hrs</span> 
+                        ${minutes}<span class="countdown-unit">min</span>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    // Calendar highlight section
+    if (interview.interview_date) {
+        const interviewDate = new Date(interview.interview_date);
+        html += generateCalendarHighlight(interviewDate);
+    }
+
+    // Job Information
+    html += `
+        <div class="job-info-card">
+            <h4>Job Information</h4>
+            <div class="interview-detail-item">
+                <div class="interview-detail-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="interview-detail-content">
+                    <div class="interview-detail-label">Position</div>
+                    <div class="interview-detail-value">${escapeHtml(interview.job_title || 'N/A')}</div>
+                </div>
+            </div>
+            <div class="interview-detail-item">
+                <div class="interview-detail-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="interview-detail-content">
+                    <div class="interview-detail-label">Company</div>
+                    <div class="interview-detail-value">${escapeHtml(interview.company || 'N/A')}</div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Interview Timeline
+    html += `
+        <div class="interview-timeline">
+            <h4 style="margin-bottom: 15px; color: var(--dark);">Interview Schedule</h4>
+    `;
+
+    // Interview Date & Time
+    if (interview.interview_date) {
+        const interviewDate = new Date(interview.interview_date);
+        const formattedDate = interviewDate.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        const formattedTime = interviewDate.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        
+        html += `
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="far fa-calendar"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-label">Date & Time</div>
+                    <div class="timeline-value">${formattedDate} at ${formattedTime}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Interview Type
+    if (interview.interview_type) {
+        const typeMap = {
+            'phone': 'Phone Interview',
+            'video': 'Video Call',
+            'in_person': 'In-Person'
+        };
+        const typeText = typeMap[interview.interview_type] || interview.interview_type;
+        
+        html += `
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-label">Interview Type</div>
+                    <div class="timeline-value">${typeText}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Interview Duration
+    if (interview.interview_duration) {
+        html += `
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-label">Duration</div>
+                    <div class="timeline-value">${interview.interview_duration} minutes</div>
+                </div>
+            </div>
+        `;
+    }
+
+    html += `</div>`; // Close interview-timeline
+
+    // Google Map for location
+    if (interview.interview_location && (interview.interview_type === 'in_person' || interview.interview_type === 'video')) {
+        html += `
+            <div class="interview-map-container">
+                <h4 style="margin-bottom: 10px; color: var(--dark);">Location</h4>
+                <div id="interviewMap" class="interview-map"></div>
+                <div style="padding: 12px; background: var(--gray-50); border-top: 1px solid var(--gray-200);">
+                    <strong>Address:</strong> ${escapeHtml(interview.interview_location)}
+                </div>
+            </div>
+        `;
+    } else if (interview.interview_location && interview.interview_type === 'phone') {
+        html += `
+            <div class="interview-detail-item">
+                <div class="interview-detail-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="interview-detail-content">
+                    <div class="interview-detail-label">Phone Number</div>
+                    <div class="interview-detail-value">${escapeHtml(interview.interview_location)}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Interview Notes
+    if (interview.interview_notes) {
+        html += `
+            <div class="interview-notes">
+                <h4>Interview Notes & Agenda</h4>
+                <div class="interview-notes-content">${escapeHtml(interview.interview_notes)}</div>
+            </div>
+        `;
+    }
+
+    // Company Contact Information
+    html += `
+        <div class="company-contact">
+            <h4>Contact Information</h4>
+            <div class="contact-item">
+                <i class="fas fa-user"></i>
+                <span>Employer: ${escapeHtml(interview.employer_name || 'N/A')}</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email: ${escapeHtml(interview.employer_email || 'N/A')}</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Location: ${escapeHtml(interview.job_location || 'N/A')}</span>
+            </div>
+        </div>
+    `;
+
+    $('#interviewDetailsContent').html(html);
+
+    // Initialize map if location exists
+    if (interview.interview_location && (interview.interview_type === 'in_person' || interview.interview_type === 'video')) {
+        setTimeout(() => {
+            initializeInterviewMap(interview.interview_location);
+        }, 100);
+    }
+
+    // Google Calendar Link
+    if (interview.calendar_link) {
+        $('#addToCalendarBtn')
+            .attr('href', interview.calendar_link)
+            .show();
+    } else {
+        $('#addToCalendarBtn').hide();
+    }
+}
+
+// Generate calendar highlight
+function generateCalendarHighlight(interviewDate) {
+    const today = new Date();
+    const year = interviewDate.getFullYear();
+    const month = interviewDate.getMonth();
+    
+    // Get first day of month and number of days
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
+    const daysInMonth = lastDay.getDate();
+    const startingDay = firstDay.getDay();
+    
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    
+    let calendarHTML = `
+        <div class="calendar-highlight">
+            <div class="calendar-header">
+                <div class="month-year">${monthNames[month]} ${year}</div>
+                <div class="interview-date">Interview: ${interviewDate.toLocaleDateString()}</div>
+            </div>
+            <div class="calendar-grid">
+    `;
+    
+    // Day headers
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    dayNames.forEach(day => {
+        calendarHTML += `<div class="calendar-day-header">${day}</div>`;
+    });
+    
+    // Empty cells for days before the first day of the month
+    for (let i = 0; i < startingDay; i++) {
+        calendarHTML += `<div class="calendar-day other-month"></div>`;
+    }
+    
+    // Days of the month
+    for (let day = 1; day <= daysInMonth; day++) {
+        const currentDate = new Date(year, month, day);
+        let dayClass = 'calendar-day';
+        
+        // Check if today
+        if (currentDate.toDateString() === today.toDateString()) {
+            dayClass += ' today';
+        }
+        
+        // Check if interview day
+        if (currentDate.toDateString() === interviewDate.toDateString()) {
+            dayClass += ' interview-day';
+        }
+        
+        calendarHTML += `<div class="${dayClass}">${day}</div>`;
+    }
+    
+    calendarHTML += `
+            </div>
+        </div>
+    `;
+    
+    return calendarHTML;
+}
+
+// Initialize interview location map
+function initializeInterviewMap(location) {
+    const mapElement = document.getElementById('interviewMap');
+    if (!mapElement) return;
+    
+    // Default coordinates for Philippines
+    let defaultCoords = [12.8797, 121.7740];
+    let zoomLevel = 12;
+    
+    // Try to geocode the location
+    geocodeLocation(location).then(coords => {
+        const map = L.map('interviewMap').setView(coords, zoomLevel);
+        
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // Add a custom icon for interview location
+        const interviewIcon = L.divIcon({
+            html: '<i class="fas fa-map-marker-alt" style="color: #e63946; font-size: 24px;"></i>',
+            iconSize: [24, 24],
+            className: 'interview-marker'
+        });
+        
+        // Add marker for interview location
+        L.marker(coords, {icon: interviewIcon})
+            .addTo(map)
+            .bindPopup(`<strong>Interview Location</strong><br>${location}`)
+            .openPopup();
+            
+    }).catch(error => {
+        console.error('Geocoding error:', error);
+        // Fallback to default coordinates with message
+        mapElement.innerHTML = `
+            <div class="map-placeholder">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Unable to load map</p>
+                <small>Location: ${location}</small>
+            </div>
+        `;
+    });
+}
+
+// Simple geocoding function
+function geocodeLocation(location) {
+    return new Promise((resolve, reject) => {
+        const searchQuery = location.includes('Philippines') ? location : location + ', Philippines';
+        
+        fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchQuery)}&limit=1`)
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.length > 0) {
+                    const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+                    resolve(coords);
+                } else {
+                    reject('Location not found');
+                }
+            })
+            .catch(error => reject(error));
+    });
+}
+
+// Update the view interview details button click handler
+$(document).on('click', '.view-interview-details-btn', function() {
+    const applicationId = $(this).attr('data-application-id');
+    console.log('Loading interview details for application:', applicationId);
+    
+    // Show loading state
+    $('#interviewDetailsContent').html(`
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin fa-2x"></i>
+            <p style="margin-top: 15px;">Loading interview details...</p>
+        </div>
+    `);
+    
+    // Hide calendar button initially
+    $('#addToCalendarBtn').hide();
+    
+    // Show modal
+    $('#interviewDetailsModal').addClass('active');
+    
+    // Load interview details via AJAX
+    $.ajax({
+        url: '/dashboard/get_interview_details',
+        type: 'GET',
+        data: { 
+            application_id: applicationId 
+        },
+        dataType: 'json',
+        success: function(response) {
+            console.log('Interview details response:', response);
+            
+            if (response.success && response.interview) {
+                displayInterviewDetails(response.interview);
+            } else {
+                showInterviewError(response.message || 'Failed to load interview details');
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error loading interview details:', error);
+            showInterviewError('An error occurred while loading interview details.');
+        }
+    });
 });
     </script>
 </body>

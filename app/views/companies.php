@@ -61,8 +61,6 @@ function time_elapsed_string($datetime, $full = false) {
     <title><?= htmlspecialchars($title) ?></title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         /* Reuse the same CSS styles from jobs.php */
         :root {
@@ -503,152 +501,6 @@ function time_elapsed_string($datetime, $full = false) {
             font-size: 1.2rem;
         }
 
-        /* ========== MAP STYLES ========== */
-        .map-container {
-            height: 200px;
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid var(--gray-300);
-            margin-bottom: 15px;
-            overflow: hidden;
-            position: relative;
-            background: #f8f9fa;
-        }
-
-        /* Map containers MUST have explicit dimensions */
-        #companiesMap, .company-mini-map {
-            height: 100% !important;
-            width: 100% !important;
-            min-height: 200px;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Leaflet container overrides */
-        .leaflet-container {
-            height: 100% !important;
-            width: 100% !important;
-            background: #f8f9fa !important;
-            border-radius: 8px;
-        }
-
-        .leaflet-tile-container {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .leaflet-map-pane {
-            z-index: 1;
-        }
-
-        .map-coordinates {
-            background: var(--gray-100);
-            padding: 8px;
-            border-radius: 6px;
-            font-size: 0.7rem;
-            color: var(--gray-600);
-            margin-bottom: 10px;
-        }
-
-        .map-instructions {
-            font-size: 0.7rem;
-            color: var(--gray-500);
-            margin-bottom: 10px;
-            font-style: italic;
-        }
-
-        /* Map View Toggle */
-        .view-toggle {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            background: var(--gray-100);
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        .view-toggle-btn {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid var(--gray-300);
-            background: white;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: var(--transition);
-            text-align: center;
-            font-weight: 500;
-        }
-
-        .view-toggle-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-
-        .view-toggle-btn:hover {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-
-        /* Map View Styles */
-        .map-view-container {
-            height: 600px;
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid var(--gray-300);
-            margin-bottom: 20px;
-            overflow: hidden;
-            position: relative;
-            background: #f8f9fa;
-        }
-
-        #companiesMap {
-            height: 100% !important;
-            width: 100% !important;
-        }
-
-        .company-marker-popup {
-            max-width: 250px;
-        }
-
-        .company-marker-popup h4 {
-            margin: 0 0 5px 0;
-            color: var(--primary);
-            font-size: 1rem;
-        }
-
-        .company-marker-popup p {
-            margin: 0 0 5px 0;
-            font-size: 0.8rem;
-            color: var(--gray-600);
-        }
-
-        .company-marker-popup .jobs-count {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.7rem;
-            margin-top: 5px;
-        }
-
-        /* Mini Map in Cards */
-        .company-mini-map {
-            height: 120px !important;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-
-        .mini-map-coordinates {
-            font-size: 0.6rem;
-            color: var(--gray-500);
-            text-align: center;
-            margin-top: 5px;
-        }
-
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .mobile-menu-toggle {
@@ -688,22 +540,6 @@ function time_elapsed_string($datetime, $full = false) {
             }
             
             .company-actions {
-                flex-direction: column;
-            }
-
-            .map-view-container {
-                height: 400px;
-            }
-
-            .map-container {
-                height: 150px;
-            }
-
-            .company-mini-map {
-                height: 100px !important;
-            }
-
-            .view-toggle {
                 flex-direction: column;
             }
         }
@@ -841,382 +677,111 @@ function time_elapsed_string($datetime, $full = false) {
                         </span>
                     </div>
 
-                    <!-- View Toggle -->
-                    <div class="view-toggle">
-                        <button class="view-toggle-btn active" data-view="grid">
-                            <i class="fas fa-th"></i> Grid View
-                        </button>
-                        <button class="view-toggle-btn" data-view="map">
-                            <i class="fas fa-map"></i> Map View
-                        </button>
-                    </div>
-
-                    <!-- Map View Container -->
-                    <div id="mapView" style="display: none;">
-                        <div class="map-view-container">
-                            <div id="companiesMap"></div>
-                        </div>
-                        <div class="map-coordinates">
-                            <span id="companiesMapCoordinates">Loading companies map...</span>
-                        </div>
-                    </div>
-
-                    <!-- Grid View Container -->
-                    <div id="gridView">
-                        <div id="companiesList">
-                            <?php if (!empty($companies)): ?>
-                                <div class="companies-grid">
-                                    <?php foreach ($companies as $company): ?>
-                                    <div class="company-card">
-                                        <div class="company-header">
-                                            <div class="company-logo">
-                                                <?php if (!empty($company['company_logo'])): ?>
-                                                    <img src="/<?= htmlspecialchars($company['company_logo']) ?>" alt="<?= htmlspecialchars($company['company_name']) ?>">
-                                                <?php else: ?>
-                                                    <i class="fas fa-building"></i>
-                                                <?php endif; ?>
-                                            </div>
-                                            <div class="company-info">
-                                                <h3><?= htmlspecialchars($company['company_name']) ?></h3>
-                                                <?php if (!empty($company['company_industry'])): ?>
-                                                    <p class="company-industry"><?= htmlspecialchars($company['company_industry']) ?></p>
-                                                <?php endif; ?>
-                                            </div>
-                                        </div>
-                                        
-                                        <?php if (!empty($company['company_description'])): ?>
-                                            <p class="company-description"><?= htmlspecialchars($company['company_description']) ?></p>
-                                        <?php endif; ?>
-
-                                        <!-- Company Mini Map -->
-                                        <?php if (!empty($company['company_address'])): ?>
-                                        <div class="map-container">
-                                            <div class="company-mini-map" id="companyMiniMap-<?= $company['id'] ?>"></div>
-                                        </div>
-                                        <?php endif; ?>
-
-                                        <div class="company-meta">
-                                            <?php if (!empty($company['company_size'])): ?>
-                                                <span class="meta-item">
-                                                    <i class="fas fa-users"></i>
-                                                    <?= htmlspecialchars($company['company_size']) ?> employees
-                                                </span>
-                                            <?php endif; ?>
-                                            <?php if (!empty($company['company_address'])): ?>
-                                                <span class="meta-item">
-                                                    <i class="fas fa-map-marker-alt"></i>
-                                                    <?= htmlspecialchars($company['company_address']) ?>
-                                                </span>
-                                            <?php endif; ?>
-                                            <?php if ($company['active_jobs'] > 0): ?>
-                                                <span class="meta-item">
-                                                    <i class="fas fa-briefcase"></i>
-                                                    <span class="jobs-count"><?= $company['active_jobs'] ?> job<?= $company['active_jobs'] !== 1 ? 's' : '' ?></span>
-                                                </span>
-                                            <?php endif; ?>
-                                        </div>
-
-                                        <div class="company-actions">
-                                            <a href="/companies/view/<?= $company['id'] ?>" class="btn btn-primary">
-                                                <i class="fas fa-eye"></i> View Company
-                                            </a>
-                                            <?php if ($company['active_jobs'] > 0): ?>
-                                                <a href="/jobs?search=<?= urlencode($company['company_name']) ?>" class="btn btn-secondary">
-                                                    <i class="fas fa-briefcase"></i> View Jobs
-                                                </a>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    <?php endforeach; ?>
-                                </div>
-
-                                <!-- Pagination -->
-                                <?php if ($data['total_pages'] > 1): ?>
-                                    <div class="pagination">
-                                        <?php if ($data['current_page_num'] > 1): ?>
-                                            <a href="?<?= http_build_query(array_merge($_GET, ['page' => $data['current_page_num'] - 1])) ?>">
-                                                <i class="fas fa-chevron-left"></i> Previous
-                                            </a>
-                                        <?php endif; ?>
-
-                                        <?php for ($i = 1; $i <= $data['total_pages']; $i++): ?>
-                                            <?php if ($i == $data['current_page_num']): ?>
-                                                <span class="current"><?= $i ?></span>
+                    <div id="companiesList">
+                        <?php if (!empty($companies)): ?>
+                            <div class="companies-grid">
+                                <?php foreach ($companies as $company): ?>
+                                <div class="company-card">
+                                    <div class="company-header">
+                                        <div class="company-logo">
+                                            <?php if (!empty($company['company_logo'])): ?>
+                                                <img src="/<?= htmlspecialchars($company['company_logo']) ?>" alt="<?= htmlspecialchars($company['company_name']) ?>">
                                             <?php else: ?>
-                                                <a href="?<?= http_build_query(array_merge($_GET, ['page' => $i])) ?>"><?= $i ?></a>
+                                                <i class="fas fa-building"></i>
                                             <?php endif; ?>
-                                        <?php endfor; ?>
+                                        </div>
+                                        <div class="company-info">
+                                            <h3><?= htmlspecialchars($company['company_name']) ?></h3>
+                                            <?php if (!empty($company['company_industry'])): ?>
+                                                <p class="company-industry"><?= htmlspecialchars($company['company_industry']) ?></p>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                    
+                                    <?php if (!empty($company['company_description'])): ?>
+                                        <p class="company-description"><?= htmlspecialchars($company['company_description']) ?></p>
+                                    <?php endif; ?>
 
-                                        <?php if ($data['current_page_num'] < $data['total_pages']): ?>
-                                            <a href="?<?= http_build_query(array_merge($_GET, ['page' => $data['current_page_num'] + 1])) ?>">
-                                                Next <i class="fas fa-chevron-right"></i>
+                                    <div class="company-meta">
+                                        <?php if (!empty($company['company_size'])): ?>
+                                            <span class="meta-item">
+                                                <i class="fas fa-users"></i>
+                                                <?= htmlspecialchars($company['company_size']) ?> employees
+                                            </span>
+                                        <?php endif; ?>
+                                        <?php if (!empty($company['company_address'])): ?>
+                                            <span class="meta-item">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <?= htmlspecialchars($company['company_address']) ?>
+                                            </span>
+                                        <?php endif; ?>
+                                        <?php if ($company['active_jobs'] > 0): ?>
+                                            <span class="meta-item">
+                                                <i class="fas fa-briefcase"></i>
+                                                <span class="jobs-count"><?= $company['active_jobs'] ?> job<?= $company['active_jobs'] !== 1 ? 's' : '' ?></span>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <div class="company-actions">
+                                        <a href="/companies/view/<?= $company['id'] ?>" class="btn btn-primary">
+                                            <i class="fas fa-eye"></i> View Company
+                                        </a>
+                                        <?php if ($company['active_jobs'] > 0): ?>
+                                            <a href="/jobs?search=<?= urlencode($company['company_name']) ?>" class="btn btn-secondary">
+                                                <i class="fas fa-briefcase"></i> View Jobs
                                             </a>
                                         <?php endif; ?>
                                     </div>
-                                <?php endif; ?>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
 
-                            <?php else: ?>
-                                <div class="no-data">
-                                    <i class="fas fa-building" style="font-size: 3rem; margin-bottom: 1rem; color: var(--gray-300);"></i>
-                                    <p>
-                                        <?php if ($search_filter || $industry_filter || $company_size_filter || $location_filter): ?>
-                                            No companies found matching your filters. 
-                                            <a href="/companies" style="color: var(--primary); text-decoration: underline;">Clear filters</a> to see all companies.
+                            <!-- Pagination -->
+                            <?php if ($data['total_pages'] > 1): ?>
+                                <div class="pagination">
+                                    <?php if ($data['current_page_num'] > 1): ?>
+                                        <a href="?<?= http_build_query(array_merge($_GET, ['page' => $data['current_page_num'] - 1])) ?>">
+                                            <i class="fas fa-chevron-left"></i> Previous
+                                        </a>
+                                    <?php endif; ?>
+
+                                    <?php for ($i = 1; $i <= $data['total_pages']; $i++): ?>
+                                        <?php if ($i == $data['current_page_num']): ?>
+                                            <span class="current"><?= $i ?></span>
                                         <?php else: ?>
-                                            No companies available at the moment. Check back later!
+                                            <a href="?<?= http_build_query(array_merge($_GET, ['page' => $i])) ?>"><?= $i ?></a>
                                         <?php endif; ?>
-                                    </p>
+                                    <?php endfor; ?>
+
+                                    <?php if ($data['current_page_num'] < $data['total_pages']): ?>
+                                        <a href="?<?= http_build_query(array_merge($_GET, ['page' => $data['current_page_num'] + 1])) ?>">
+                                            Next <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             <?php endif; ?>
-                        </div>
+
+                        <?php else: ?>
+                            <div class="no-data">
+                                <i class="fas fa-building" style="font-size: 3rem; margin-bottom: 1rem; color: var(--gray-300);"></i>
+                                <p>
+                                    <?php if ($search_filter || $industry_filter || $company_size_filter || $location_filter): ?>
+                                        No companies found matching your filters. 
+                                        <a href="/companies" style="color: var(--primary); text-decoration: underline;">Clear filters</a> to see all companies.
+                                    <?php else: ?>
+                                        No companies available at the moment. Check back later!
+                                    <?php endif; ?>
+                                </p>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-    // Map variables
-    let companiesMap = null;
-    let companyMarkers = [];
-    const defaultLat = 14.5995, defaultLng = 120.9842;
-
-    // Initialize companies map
-    function initializeCompaniesMap() {
-        console.log('Initializing Companies Map...');
-        
-        const mapContainer = document.getElementById('companiesMap');
-        if (!mapContainer) {
-            console.error('Companies map container not found');
-            return;
-        }
-
-        // Clear any existing map
-        if (companiesMap) {
-            companiesMap.remove();
-            companiesMap = null;
-            companyMarkers = [];
-        }
-
-        // Wait for container to be visible
-        setTimeout(() => {
-            try {
-                // Initialize map
-                companiesMap = L.map('companiesMap', {
-                    center: [defaultLat, defaultLng],
-                    zoom: 11,
-                    zoomControl: true,
-                    dragging: true,
-                    scrollWheelZoom: true
-                });
-
-                // Add tile layer
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(companiesMap);
-
-                // Add companies to map
-                addCompaniesToMap();
-
-                // Force resize after a short delay
-                setTimeout(() => {
-                    if (companiesMap) {
-                        companiesMap.invalidateSize();
-                        console.log('Companies Map initialized successfully');
-                    }
-                }, 300);
-
-            } catch (error) {
-                console.error('Error initializing companies map:', error);
-            }
-        }, 100);
-    }
-
-    // Add companies to the map
-    function addCompaniesToMap() {
-        if (!companiesMap) return;
-
-        // Clear existing markers
-        companyMarkers.forEach(marker => companiesMap.removeLayer(marker));
-        companyMarkers = [];
-
-        // Get company data from the page
-        const companyCards = document.querySelectorAll('.company-card');
-        let bounds = L.latLngBounds();
-
-        companyCards.forEach((card, index) => {
-            const companyId = card.querySelector('a[href*="/companies/view/"]')?.href.split('/').pop();
-            const companyName = card.querySelector('h3')?.textContent || 'Company';
-            const companyIndustry = card.querySelector('.company-industry')?.textContent || '';
-            const companyAddress = card.querySelector('.meta-item i.fa-map-marker-alt')?.parentNode?.textContent?.replace('📍', '').trim() || '';
-            const jobsCount = card.querySelector('.jobs-count')?.textContent || '0 jobs';
-
-            if (companyAddress) {
-                // Geocode company address
-                geocodeCompanyAddress(companyAddress).then(coords => {
-                    if (coords) {
-                        const marker = L.marker([coords.lat, coords.lng]).addTo(companiesMap);
-                        
-                        // Create popup content
-                        const popupContent = `
-                            <div class="company-marker-popup">
-                                <h4>${companyName}</h4>
-                                ${companyIndustry ? `<p><strong>Industry:</strong> ${companyIndustry}</p>` : ''}
-                                <p><strong>Location:</strong> ${companyAddress}</p>
-                                <p><strong>Jobs:</strong> <span class="jobs-count">${jobsCount}</span></p>
-                                <a href="/companies/view/${companyId}" class="btn btn-primary btn-sm" style="display: block; text-align: center; margin-top: 10px; padding: 5px 10px;">
-                                    <i class="fas fa-eye"></i> View Company
-                                </a>
-                            </div>
-                        `;
-                        
-                        marker.bindPopup(popupContent);
-                        companyMarkers.push(marker);
-                        
-                        // Extend bounds to include this marker
-                        bounds.extend([coords.lat, coords.lng]);
-                        
-                        // Fit map to bounds after all markers are added
-                        if (index === companyCards.length - 1) {
-                            setTimeout(() => {
-                                if (bounds.isValid()) {
-                                    companiesMap.fitBounds(bounds, { padding: [20, 20] });
-                                }
-                            }, 500);
-                        }
-                    }
-                });
-            }
-        });
-
-        // If no companies with addresses, set default view
-        if (companyCards.length === 0) {
-            companiesMap.setView([defaultLat, defaultLng], 11);
-        }
-    }
-
-    // Initialize mini maps for company cards
-    function initializeCompanyMiniMaps() {
-        const companyCards = document.querySelectorAll('.company-card');
-        
-        companyCards.forEach(card => {
-            const companyId = card.querySelector('a[href*="/companies/view/"]')?.href.split('/').pop();
-            const companyAddress = card.querySelector('.meta-item i.fa-map-marker-alt')?.parentNode?.textContent?.replace('📍', '').trim() || '';
-            const mapContainer = card.querySelector(`#companyMiniMap-${companyId}`);
-            
-            if (mapContainer && companyAddress) {
-                // Wait for card to be in view
-                setTimeout(() => {
-                    initializeMiniMap(mapContainer, companyAddress, companyId);
-                }, 100 * companyCards.length);
-            }
-        });
-    }
-
-    // Initialize a mini map for a company card
-    function initializeMiniMap(container, address, companyId) {
-        if (!container) return;
-
-        // Clear existing map
-        const existingMap = container._leaflet_map;
-        if (existingMap) {
-            existingMap.remove();
-        }
-
-        // Geocode address
-        geocodeCompanyAddress(address).then(coords => {
-            if (coords) {
-                try {
-                    const miniMap = L.map(container, {
-                        center: [coords.lat, coords.lng],
-                        zoom: 13,
-                        zoomControl: false,
-                        dragging: false,
-                        scrollWheelZoom: false,
-                        doubleClickZoom: false,
-                        boxZoom: false,
-                        keyboard: false,
-                        tap: false,
-                        touchZoom: false
-                    });
-
-                    // Add tile layer
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: ''
-                    }).addTo(miniMap);
-
-                    // Add marker
-                    L.marker([coords.lat, coords.lng], {
-                        icon: L.divIcon({
-                            className: 'company-mini-marker',
-                            html: '<i class="fas fa-building" style="color: #4361ee; font-size: 16px;"></i>',
-                            iconSize: [20, 20],
-                            iconAnchor: [10, 10]
-                        })
-                    }).addTo(miniMap);
-
-                    // Store reference
-                    container._leaflet_map = miniMap;
-
-                } catch (error) {
-                    console.error('Error initializing mini map:', error);
-                }
-            }
-        });
-    }
-
-    // Geocode company address
-    async function geocodeCompanyAddress(address) {
-        if (!address) return null;
-
-        try {
-            const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`);
-            const data = await response.json();
-            
-            if (data && data.length > 0) {
-                return {
-                    lat: parseFloat(data[0].lat),
-                    lng: parseFloat(data[0].lon)
-                };
-            }
-        } catch (error) {
-            console.error('Error geocoding address:', error);
-        }
-        
-        return null;
-    }
-
-    // View toggle functionality
-    function setupViewToggle() {
-        const gridViewBtn = document.querySelector('[data-view="grid"]');
-        const mapViewBtn = document.querySelector('[data-view="map"]');
-        const gridView = document.getElementById('gridView');
-        const mapView = document.getElementById('mapView');
-
-        gridViewBtn.addEventListener('click', function() {
-            gridViewBtn.classList.add('active');
-            mapViewBtn.classList.remove('active');
-            gridView.style.display = 'block';
-            mapView.style.display = 'none';
-        });
-
-        mapViewBtn.addEventListener('click', function() {
-            mapViewBtn.classList.add('active');
-            gridViewBtn.classList.remove('active');
-            gridView.style.display = 'none';
-            mapView.style.display = 'block';
-            
-            // Initialize map if not already initialized
-            if (!companiesMap) {
-                initializeCompaniesMap();
-            } else {
-                companiesMap.invalidateSize();
-            }
-        });
-    }
-
     $(document).ready(function() {
         // Mobile menu toggle
         $('.mobile-menu-toggle').on('click', function() {
@@ -1273,24 +838,7 @@ function time_elapsed_string($datetime, $full = false) {
             urlParams.delete(filterName);
             window.location.href = '/companies?' + urlParams.toString();
         });
-
-        // Initialize view toggle
-        setupViewToggle();
-
-        // Initialize mini maps for company cards
-        setTimeout(() => {
-            initializeCompanyMiniMaps();
-        }, 1000);
     });
-
-    // Debug function
-    function debugMapStatus() {
-        console.log('=== COMPANIES MAP DEBUG INFO ===');
-        console.log('Companies Map:', companiesMap);
-        console.log('Company Markers:', companyMarkers.length);
-        console.log('Companies Container:', document.getElementById('companiesMap'));
-        console.log('=== END DEBUG ===');
-    }
     </script>
 </body>
 </html>

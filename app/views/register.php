@@ -4,18 +4,28 @@ $error = $_SESSION['error'] ?? null;
 $success = $_SESSION['success'] ?? null;
 $info = $_SESSION['info'] ?? null;
 
-// Get Google registration data if available
+// Get social registration data if available
 $googleData = $_SESSION['google_registration_data'] ?? null;
+$facebookData = $_SESSION['facebook_registration_data'] ?? null;
+
 if ($googleData) {
     $prefillName = htmlspecialchars($googleData['name'] ?? '');
     $prefillEmail = htmlspecialchars($googleData['email'] ?? '');
-    $googleId = $googleData['google_id'] ?? '';
+    $socialId = $googleData['google_id'] ?? '';
     $avatar = $googleData['avatar'] ?? '';
+    $socialType = 'google';
+} elseif ($facebookData) {
+    $prefillName = htmlspecialchars($facebookData['name'] ?? '');
+    $prefillEmail = htmlspecialchars($facebookData['email'] ?? '');
+    $socialId = $facebookData['facebook_id'] ?? '';
+    $avatar = $facebookData['avatar'] ?? '';
+    $socialType = 'facebook';
 } else {
     $prefillName = htmlspecialchars($_POST['name'] ?? '');
     $prefillEmail = htmlspecialchars($_POST['email'] ?? '');
-    $googleId = '';
+    $socialId = '';
     $avatar = '';
+    $socialType = '';
 }
 
 // Don't clear session data yet - we need it for form validation
@@ -134,6 +144,32 @@ if ($googleData) {
         .btn-google:hover {
             background: #f8fafc;
             border-color: #cbd5e1;
+            transform: translateY(-1px);
+        }
+
+        .btn-facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #1877F2;
+            border-radius: var(--border-radius);
+            background: #1877F2;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-facebook:hover {
+            background: #166fe5;
+            border-color: #166fe5;
             transform: translateY(-1px);
         }
 
@@ -357,8 +393,8 @@ if ($googleData) {
         </a>
         
         <div class="auth-header">
-            <h1><?= $googleData ? 'Complete Your Registration' : 'Join HireTech' ?></h1>
-            <p><?= $googleData ? 'Your Google information has been pre-filled' : 'Create your account to get started' ?></p>
+            <h1><?= $socialType ? 'Complete Your Registration' : 'Join HireTech' ?></h1>
+            <p><?= $socialType ? 'Your ' . ucfirst($socialType) . ' information has been pre-filled' : 'Create your account to get started' ?></p>
         </div>
 
         <?php if($error): ?>
@@ -373,14 +409,15 @@ if ($googleData) {
             <div class="alert alert-info"><?= htmlspecialchars($info) ?></div>
         <?php endif; ?>
 
-        <!-- Google Sign-Up Option -->
-        <?php if(!$googleData): ?>
+        <!-- Social Sign-Up Option -->
+        <?php if(!$socialType): ?>
         <div class="google-signin-section">
             <a href="/auth/google" class="btn-google">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4xMDQ1NUg5LjE4VjEwLjg5NDVIMTMuOTlDMTMuNjcgMTIuNzE0NSAxMi4wOSAxMy45OTQ1IDEwLjE4IDEzLjk5NDVDNy44MyAxMy45OTQ1IDUuOTEgMTIuMDg0NSA1LjkxIDkuNzM0NTVDNS45MSA3LjM4NDU1IDcuODIgNS40NzQ1NSAxMC4xNyA1LjQ3NDU1QzExLjM0IDUuNDc0NTUgMTIuNCA1LjkyNDU1IDEzLjE3IDYuNjg0NTVMMTQuOTIgNC45MzQ1NUMxMy42NCAzLjczNDU1IDExLjkgMy4wMDQ1NSAxMC4xNyAzLjAwNDU1QzYuMzYgMy4wMDQ1NSAzLjI3IDYuMDk0NTUgMy4yNyA5LjkwNDU1QzMuMjcgMTMuNzE0NSA2LjM2IDE2LjgwNDUgMTAuMTcgMTYuODA0NUMxMy42MiAxNi44MDQ1IDE2LjM1IDE0LjI3NDUgMTYuMzUgMTAuMjA0NUMxNi4zNSA5LjU1NDU1IDE2LjI4IDkuMDA0NTUgMTYuNTEgOC40NTQ1NVoiIGZpbGw9IiM0Mjg1RjQiLz4KPC9zdmc+" 
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4xMDQ1NUg5LjE4VjEwLjg5NDVIMTMuOTlDMTMuNjcgMTIuNzE0NSAxMi4wOSAxMy45OTQ1IDEwLjE4IDEzLjk5NDVDNy44MyAxMy45OTQ1IDUuOTEgMTIuMDg0NSA1LjkxIDkuNzM0NTVDNS45MSA3LjM4NDU1IDcuODIgNS40NzQ1NSAxMC4xNyA5LjQ3NDU1QzExLjM0IDUuNDc0NTUgMTIuNCA1LjkyNDU1IDEzLjE3IDYuNjg0NTVMMTQuOTIgNC45MzQ1NUMxMy42NCAzLjczNDU1IDExLjkgMy4wMDQ1NSAxMC4xNyAzLjAwNDU1QzYuMzYgMy4wMDQ1NSAzLjI3IDYuMDk0NTUgMy4yNyA5LjkwNDU1QzMuMjcgMTMuNzE0NSA2LjM2IDE2LjgwNDUgMTAuMTcgMTYuODA0NUMxMy42MiAxNi44MDQ1IDE2LjM1IDE0LjI3NDUgMTYuMzUgMTAuMjA0NUMxNi4zNSA5LjU1NDU1IDE2LjI4IDkuMDA0NTUgMTYuNTEgOC40NTQ1NVoiIGZpbGw9IiM0Mjg1RjQiLz4KPC9zdmc+" 
                      alt="Google" width="18" height="18">
                 Sign up with Google
             </a>
+           
             <div class="divider">
                 <span>or continue with email</span>
             </div>
@@ -389,8 +426,9 @@ if ($googleData) {
 
         <!-- Regular Email Registration Form -->
         <form id="registerForm" action="/auth/register" method="POST">
-            <!-- Hidden fields for Google data -->
-            <input type="hidden" name="google_id" value="<?= $googleId ?>">
+            <!-- Hidden fields for social data -->
+            <input type="hidden" name="google_id" value="<?= $socialType === 'google' ? $socialId : '' ?>">
+           
             <input type="hidden" name="avatar" value="<?= htmlspecialchars($avatar) ?>">
 
             <div class="form-group">
@@ -405,9 +443,9 @@ if ($googleData) {
                 <input type="email" id="email" name="email" class="form-control" 
                        placeholder="Enter your email" required 
                        value="<?= $prefillEmail ?>" 
-                       <?= $googleData ? 'readonly' : '' ?>>
-                <?php if($googleData): ?>
-                    <div class="form-note">Email from your Google account</div>
+                       <?= $socialType ? 'readonly' : '' ?>>
+                <?php if($socialType): ?>
+                    <div class="form-note">Email from your <?= ucfirst($socialType) ?> account</div>
                 <?php endif; ?>
             </div>
 
@@ -424,19 +462,22 @@ if ($googleData) {
                 <label for="password">Password</label>
                 <div class="password-toggle">
                     <input type="password" id="password" name="password" class="form-control" 
-                           placeholder="Create a password" required>
+                           placeholder="Create a password" <?= $socialType ? '' : 'required' ?>>
                     <button type="button" class="toggle-password" aria-label="Toggle password visibility">
                         👁️
                     </button>
                 </div>
                 <div class="password-strength" id="passwordStrength"></div>
+                <?php if($socialType): ?>
+                    <div class="form-note">Optional for social registration</div>
+                <?php endif; ?>
             </div>
 
             <div class="form-group">
                 <label for="confirm_password">Confirm Password</label>
                 <div class="password-toggle">
                     <input type="password" id="confirm_password" name="confirm_password" 
-                           class="form-control" placeholder="Confirm your password" required>
+                           class="form-control" placeholder="Confirm your password" <?= $socialType ? '' : 'required' ?>>
                     <button type="button" class="toggle-password" aria-label="Toggle password visibility">
                         👁️
                     </button>
@@ -445,7 +486,7 @@ if ($googleData) {
             </div>
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
-                <?= $googleData ? 'Complete Registration' : 'Create Account' ?>
+                <?= $socialType ? 'Complete Registration' : 'Create Account' ?>
             </button>
         </form>
 
@@ -500,7 +541,8 @@ if ($googleData) {
                 const password = $('#password').val();
                 const confirm = $('#confirm_password').val();
                 
-                if (password !== confirm) {
+                // Only validate password if both fields are filled
+                if (password !== '' && confirm !== '' && password !== confirm) {
                     e.preventDefault();
                     $('#passwordMatch').html('✗ Passwords must match').addClass('strength-weak');
                     $('#confirm_password').focus();

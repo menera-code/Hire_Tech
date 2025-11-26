@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hiretech
+    env: php
+    buildCommand: chmod +x render-build.sh && ./render-build.sh
+    startCommand: php -S 0.0.0.0:8000
+    envVars:
+      - key: DATABASE_HOST
+        value: sqlXXX.epizy.com
+      - key: DATABASE_NAME  
+        value: epiz_123456_hiretech
+      - key: DATABASE_USERNAME
+        value: epiz_123456_yourname
+      - key: DATABASE_PASSWORD
+        value: your_mysql_password

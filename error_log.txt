@@ -1,0 +1,2424 @@
+[25-Nov-2025 12:50:18 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:50:18 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:50:18 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:50:18 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:50:18 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:50:18 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:50:18 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:50:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:50:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:50:19 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:50:19 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:50:19 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:50:19 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:50:19 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:50:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:50:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:50:19 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:50:19 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:50:19 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:50:19 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:50:19 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:50:22 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:50:22 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:50:22 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:50:22 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:50:22 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:50:22 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:50:22 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:50:22 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:50:22 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:50:22 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:50:23 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:50:23 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:50:23 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:50:23 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:51:07 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:51:07 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:51:07 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:51:33 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:51:33 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:51:33 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:51:40 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:51:40 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:51:40 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:51:40 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:51:40 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:51:40 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:51:42 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:51:42 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:51:42 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:52:40 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:52:40 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:52:40 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:52:40 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:52:40 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:52:40 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:52:40 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:52:41 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:52:41 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:52:41 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:52:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:52:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:52:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:52:41 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:52:41 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:52:41 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:52:41 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:52:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:52:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:52:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:52:41 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:52:42 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:52:42 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:52:42 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:52:42 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:52:42 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:52:42 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:52:42 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:54:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:54:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:54:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:54:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:54:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:54:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:54:13 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 12:57:30 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 12:57:30 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 12:57:30 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 12:57:31 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 12:57:31 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 12:57:31 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 12:57:31 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 13:04:25 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:04:25 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:04:25 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:04:26 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:04:26 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:04:26 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:04:26 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 13:05:31 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:05:31 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:05:31 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:05:31 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:05:31 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:05:31 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:05:31 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 13:07:40 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:07:40 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:07:40 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:07:40 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:07:40 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:07:40 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:07:40 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 13:07:41 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:07:41 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:07:41 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:07:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:07:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:07:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:07:41 Europe/Berlin] Facebook config: Array
+(
+    [app_id] => your_facebook_app_id
+    [app_secret] => your_facebook_app_secret
+    [redirect_uri] => http://localhost:3000/auth/facebook_callback
+)
+
+[25-Nov-2025 13:08:49 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:08:49 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:08:49 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:08:50 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:08:50 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:08:50 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:08:50 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:08:51 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:08:51 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:08:51 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:08:51 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:08:51 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:08:51 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:08:51 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:08:51 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:08:51 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:08:51 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:08:51 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:08:51 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:08:51 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:08:51 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:20:32 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:20:32 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:20:32 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:20:34 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:20:34 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:20:34 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:20:34 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:21:02 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:21:02 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:21:02 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:21:02 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:21:02 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:21:02 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:21:02 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:21:03 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:21:03 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:21:03 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:21:03 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:21:03 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:21:03 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:21:03 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:21:03 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 13:21:03 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j92J_h0F1MpR5r0E7m7Jj2w2LzYzuHDF66rveNba4BU4WYJMzKzyRGPpXVfYIWq-PA
+    [scope] => email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 13:21:03 Europe/Berlin] Authorization code received
+[25-Nov-2025 13:21:03 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 13:21:05 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2tgzJ88GjuA8FfJkl_wCFiW4xOyAf9rHBOCc6oCdkzKeXc4FFqpyMSaN58wpFntgsNpaABtAdU68yWrhPXEzrBy3CxNCEFETjlLO8bSQB2gHWFQFwb1ouQBmSvTVGZiWQDP4NHiXdokHYue21Z2ZgMJIyE20gmYTZl8WeYKvrJhyxC-PvggBV6vLo-guyuaFzK_pAOCvfVrtHDlRBH3fagAF_Hp4aFqeHyYU0O35B2CDYeheMH6ymjrY6sSV0VtLeTXfuPjYpUO1B01jcL_zY691hAaCgYKAWASARUSFQHGX2MiCxKnuV8gkX2FY7XSpZluuA0294
+    [expires_in] => 3597
+    [scope] => openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJjZ3NwUnk5LUdBSW9wZFNTc3Q4TW1RIiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDczMjY1LCJleHAiOjE3NjQwNzY4NjV9.ASwrasyzdUhAsFY0W7sHCD3pMmyzPoNF2P5Yi9SF-YSJOZyOoGBCjviaSIpXkPz-U_FJ0waeNg51nfeUisI0AN88ucYUGgKwTyyH0er_0ihd1vGNmBEfMiUGkrmVosnBDxkvm2MFkW9ta4zeyUI9adEiMa2IWOIb2kwFmiPOACQr_OM2MwFmZRKKVsp_9C5fkhpqJ8Q8vq5C36LelzhZYWiAMQVqe8QPdXXNSceclOLVUWaUtKJO7Q9EuiNIfX7YEpYq925KjWzbS2HtzWwVEEmVZtzScRmBKx4dZiFF6g2kiF9bLAuiPxerRekMSMl7Goo4ZKIC3jfCweL_0NQk_A
+    [created] => 1764073265
+)
+
+[25-Nov-2025 13:21:05 Europe/Berlin] Access token set successfully
+[25-Nov-2025 13:21:06 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 13:21:06 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 13:21:06 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 13:21:06 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 13:21:06 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 13:21:06 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 13:21:06 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 13:21:06 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 13:21:06 Europe/Berlin] Session created successfully
+[25-Nov-2025 13:21:06 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 13:21:06 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 13:40:32 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:40:32 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:40:32 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:40:32 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:40:32 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:40:32 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:40:32 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:40:34 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:40:34 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:40:34 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:40:34 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:40:34 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:40:34 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:40:34 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:40:34 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:40:34 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:40:34 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:40:34 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:40:34 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:40:34 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:40:34 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:40:34 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 13:40:34 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j90pmItDuEMoIW-1t9gJdtKdHt56_Bi6B5i4UBHplGoZvp_N7OS-EtUHzKFCt7YQ-w
+    [scope] => email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 13:40:34 Europe/Berlin] Authorization code received
+[25-Nov-2025 13:40:34 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 13:40:35 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2s7pBMUiMiAO-D0I2Jh7M7y7kRiypYdrENc24O5SkwVnXcLV8R7Y_xMYJ2766eWtmuk71XMEZCwN1c3F8lDDMr51CuOT_RZT7abrA_UIKzy6yDAPKZBUox0d_6TidPthZzHHm7ZwZBJh2Pvm1Lqr2Sw0fATfz65PkWExo40P0fvtfNG2z0Q449PdtirC77PYchzisaxaZwd9JqyilBUtKvEKR8DNNAgdsyKW_G_wgv83yIZ7Bd8Kd6CZq-5TvhmWdCMz1Cs28oY0mpM1rd6_4ERZAaCgYKAVYSARUSFQHGX2MiB7gLkJ3ApIdZTlqeF2u4yg0293
+    [expires_in] => 3599
+    [scope] => https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJDRlhCY0JkeXVQUUZ1Wm5QendiRUN3IiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDc0NDM1LCJleHAiOjE3NjQwNzgwMzV9.b7_j91coBU3qD9W3LOBxzIb-ZFX6Z7Dc-EH7Mly7fAfrGZfDL0Or3obxPvpCgLBnY50CnCodCC6BF_O_atJoVB-3sWqSINjqdTS1i6VtW-sebgz4qmD3f0b0YtPfdsfgz8hIf1USS2K6ltIqAGOu1CzwsBA-PvCNUBydMMTGzSx4J_08WBluxDQniituXL5Kqv-qI7i_sN6IAMw1yF2-tBDWrZ23ngePEjmy2lJB-ACVNE2i4GBcQPYRvNrOwJQR9gT9g6_kDsy1V3u90_ICt2ffSk8rLz84ylEmiHhNKXluddrG2Itsx8U4Vp9yDimbT0nspSQTKJoNhZ6TO7O73Q
+    [created] => 1764074435
+)
+
+[25-Nov-2025 13:40:35 Europe/Berlin] Access token set successfully
+[25-Nov-2025 13:40:35 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 13:40:35 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 13:40:35 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 13:40:35 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 13:40:35 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 13:40:35 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 13:40:35 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 13:40:35 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 13:40:35 Europe/Berlin] Session created successfully
+[25-Nov-2025 13:40:35 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 13:40:35 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 13:40:37 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:40:37 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:40:37 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:40:37 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:40:37 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:40:37 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:40:37 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:49:30 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:49:30 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:49:30 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:49:30 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:49:30 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:49:30 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:49:30 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:49:31 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:49:31 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:49:31 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:49:31 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:49:31 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:49:31 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:49:31 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:49:31 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:49:31 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:49:31 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:49:31 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:49:31 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:49:31 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:49:31 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:51:06 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:51:06 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:51:06 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:51:06 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:51:06 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:51:06 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:51:06 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:51:07 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:51:07 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:51:07 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:51:07 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:51:07 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:51:07 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:51:07 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 13:51:07 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 13:51:07 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 13:51:07 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 13:51:07 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 13:51:07 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 13:51:07 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 13:51:07 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:00:36 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:00:36 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:00:36 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:00:37 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:00:37 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:00:37 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:00:37 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:00:38 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:00:38 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:00:38 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:00:38 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:00:38 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:00:38 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:00:38 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:00:39 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:00:39 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:00:39 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:00:39 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:00:39 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:00:39 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:00:39 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:00:41 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:00:41 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:00:41 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:00:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:00:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:00:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:00:41 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:00:41 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:00:41 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:00:41 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:00:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:00:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:00:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:00:41 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:00:42 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:00:42 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:00:42 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:00:42 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:00:42 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:00:42 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:00:42 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:04:55 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:04:55 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:04:55 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:04:55 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:04:55 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:04:55 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:04:55 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:04:55 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:04:55 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:04:55 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:04:55 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://hiretech.infinityfree.me/auth/google_callback
+)
+
+[25-Nov-2025 14:04:55 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:04:55 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:04:55 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:05:51 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:05:51 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:05:51 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:05:51 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:05:51 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:05:51 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:05:51 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:05:52 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:05:52 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:05:52 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:05:52 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:05:52 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:05:52 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:05:52 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:05:52 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:05:52 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:05:52 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:05:53 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:05:53 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:05:53 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:05:53 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:05:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:05:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:05:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:05:54 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:05:54 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:05:54 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:05:54 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:05:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:05:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:05:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:05:54 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:05:54 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:05:54 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:05:54 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:05:54 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 14:05:54 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j92mpHV370MyG5LVnQK0CvQ-iY4fbbwlFQeuFHQuerHvNe3zI3LlFGOLDAToTAummA
+    [scope] => email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 14:05:54 Europe/Berlin] Authorization code received
+[25-Nov-2025 14:05:54 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 14:05:55 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2vnpz17-NapuhN-uw9HSfvXez3EnlA8U1C1Eo1jd7sEhSKv6Z4FBDXFCbRB8-FA_LxJ6g90R-xZyfzwS_fwU2y3yIsqaKg1sZvBikat9CLjhtY8KWN94_U4R7gC01NJZ7MFSPpLM5keLylH7CyDf9C95q_-0Sv2qV5Lqg4dkzwfmzYAG4GQ7W6QotO893IAo_TiZ-_z3Ue9eRFzilhyZwgbFvwvDa0vIpJJe6MF01N-_w2eJLJ-mzcg7iGdzpGnGJsq0lhGw2N_jXrcpooe0wHjNPoaCgYKAYMSARUSFQHGX2Mi0MWfzl7PUoLcCNpJv5lk0A0294
+    [expires_in] => 3598
+    [scope] => openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJKQ2VERmNBTmVYXzZ6X0NQa1FkdHFnIiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDc1OTU1LCJleHAiOjE3NjQwNzk1NTV9.PhQewm-y6JYXa8OGsQkLCQ62DAQ3e22EX913uclpo1EzmZoWV1RUhfB8HQEZm8BTsptC2Cv6iOqLUuLkCD3J03qxSb_siyf5dYmE-cWQCBQ28C_E0VCdH0RP8bGj56V_YWVLapTx7Lz3w9InWj5YZCr3DoCsMAYUs538C3Q7PpGpOqO_tBZ-OObAoGae_NVZN43OrzOgTbNKDYSWJ6n4nW4egBX6NxMq5s2becBpdXtHB04icPGwnZq4sDPwqsQ1se1oqZ4SdwIInqj08dGHC741IhNs9vPxaJwQF4jeqNGjXiThvsXIcQLClHrDyMUFkeUk-ilv5AaXWWZ2xL0g0Q
+    [created] => 1764075955
+)
+
+[25-Nov-2025 14:05:55 Europe/Berlin] Access token set successfully
+[25-Nov-2025 14:05:55 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 14:05:55 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 14:05:55 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 14:05:55 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 14:05:55 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 14:05:55 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 14:05:55 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 14:05:55 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 14:05:55 Europe/Berlin] Session created successfully
+[25-Nov-2025 14:05:55 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 14:05:55 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 14:08:40 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:08:40 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:08:40 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:08:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:08:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:08:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:08:41 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:08:41 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:08:41 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:08:41 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:08:41 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:08:41 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:08:41 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:08:41 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:48 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:48 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:48 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:48 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:48 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:48 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:48 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:50 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:50 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:50 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:50 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:50 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:50 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:50 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:51 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:51 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:51 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:51 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:51 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:51 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:51 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:51 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 14:25:51 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j9257qCpkwwFhH_B8Mz86ZjxOpGFuuHpEnrmjBZR690aRIlM0C3IWkEGe5Ltyrq_xg
+    [scope] => email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 14:25:51 Europe/Berlin] Authorization code received
+[25-Nov-2025 14:25:51 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 14:25:52 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2tZaOCQB4INoCR-jLq1vb4xNq8vm6hj4CrHWoMMqmJbl7xg4Ng_gWfMw-6PX9qvEaajLQdzd5PBvpAufbeJI3UmYoztXAFBaXJmrQvfA-8qyE_UfimDs9Wp0cpwLwKk5XfDMxkqOKCMnhnLjmJmBMDdXLJetzgiAg4LqsQh-zxwZ3gx_j0DU7_TRWu7gN6gqkX_TNJfhDMJ8z4vmyYZzewdFuLrY4JKYXYtKJxNwWHZ3qJUMd0L87-8XqNjmVv-F-rO5DZziNT3bxxxLPdPDZnIXYIaCgYKAd4SARUSFQHGX2MiOmNeGlg-5utuWx-GcydD3A0294
+    [expires_in] => 3598
+    [scope] => https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ0S0k2dzdTVzc1VXhuQjJSeG55U21RIiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDc3MTUyLCJleHAiOjE3NjQwODA3NTJ9.PW4-2CgDOuZljaGA1GW3x4pZ3sjgUATKVaemhO0S8vPQiMbDeA5NBrEiLdih4arDRSDU6I5Az9P4nDDQQRFoaRhFIW_-QBV4dlivJ1LVnybRB8BQMjRXY56p1YG1Kjybzc1y6649th7RsUZ7U15n-ZGWkEXzpijLbUoXaaqavm1Lk_7iK0V-7n9w5FT4JA092B-v1_QOm72t-GULhQkR_tXiF89fTeIISUXAjH8yvg_v_uflVWxvBkjp1CdGNiKnU4VVneSGy22O18WRZN6QvREfy8HW9y9DlBdOa1Jmx13_hgYdlStEwQ2nhuUSA1vhYCV4YnbF6ldGZ6aRqb0elg
+    [created] => 1764077152
+)
+
+[25-Nov-2025 14:25:52 Europe/Berlin] Access token set successfully
+[25-Nov-2025 14:25:52 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 14:25:52 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 14:25:52 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 14:25:52 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 14:25:52 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 14:25:52 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 14:25:52 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 14:25:52 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 14:25:52 Europe/Berlin] Session created successfully
+[25-Nov-2025 14:25:52 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 14:25:52 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 14:25:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:54 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:54 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:54 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:54 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:55 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:55 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:55 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:55 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:59 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:59 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:59 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:59 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:59 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:59 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:59 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:25:59 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:25:59 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:25:59 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:25:59 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:25:59 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:25:59 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:25:59 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:29:36 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:29:36 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:29:36 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:29:36 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:29:36 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:29:36 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:29:36 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:30:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:30:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:30:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:30:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:30:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:30:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:30:13 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:30:14 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:30:14 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:30:14 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:30:14 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:30:14 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:30:14 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:30:14 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:30:14 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 14:30:14 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j92ss5MjzDPN32PtoXb9c73iqlJA8Nqq8mzeUj0HOb8wkZ-WIHxcWvUpl9HPEpqalg
+    [scope] => email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 14:30:14 Europe/Berlin] Authorization code received
+[25-Nov-2025 14:30:14 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 14:30:15 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2vWaNUl5qIvHWG6wuo5QifBGjU72U1_6pyLl4skWp7-ZhbvzAiLR6Y43VKx_DevU9BKrzQc4qfbwjTpNIzJ_H3dnjHT3Y8UKssGNvEEzGTKdD9Rz-eFuTpzxrsq6HgTXCbozLgMYfroQXydQOGrklbYO0rqx_eX2LREnPlUxof8g7uAKmHQoyJdX86GQsEuBqsY6Z4iVCuVLvoXLBgE19oIS7mfhwXaAWRYX_hZFXzywhfUvwg03_dEVBl15pc6vp7fUcgFGJeS4aQWOwK4zkkc6AaCgYKAT8SARUSFQHGX2Mibwqlo24Yr6_hABj_oSK9vw0293
+    [expires_in] => 3599
+    [scope] => https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJBZUFqWnhjbzV1MGtOX1Y4TU1qZmtnIiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDc3NDE2LCJleHAiOjE3NjQwODEwMTZ9.HwMb7PwtcDPNqEtLY3CLDYMDEjxdKoNvrYyTqlfPAPODs8CcpYscZYDiZs4Fc76UsxWQ30yTC4xvwcudTaBehq94M834stfLXilUS9JSQulglTDXthuo-RfV6jokr2-5bXg6HWPcEp_LYMPMV1eeomrnyUPQO1-Xo-0YunP2FDrARLYYhVPz7iDrq6lABo8VWt5KIqGy_CSN2-0s7dXeFPR-7n6dACsW2AZ6VXsx9KNBM-V_d36czwoRacc0cW026k7TEb6yp4luzVFziLADgCVh_7-rGbqt8Ae_vIPBSO-WdNp8Z1DUumPpn5-Stv0Fk7LOGPBeqOoVnhKn9ePv-A
+    [created] => 1764077415
+)
+
+[25-Nov-2025 14:30:15 Europe/Berlin] Access token set successfully
+[25-Nov-2025 14:30:15 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 14:30:15 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 14:30:15 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 14:30:15 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 14:30:15 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 14:30:15 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 14:30:15 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 14:30:15 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 14:30:15 Europe/Berlin] Session created successfully
+[25-Nov-2025 14:30:15 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 14:30:15 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 14:31:11 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:11 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:11 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:11 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:11 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:11 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:11 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:13 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:13 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:16 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:16 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:16 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:16 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:16 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:16 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:16 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:16 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:16 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:16 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:16 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:16 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:16 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:16 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:16 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 14:31:16 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j93KORKmglBYLL3US_V6WiTHg9LuAEhHuIhfCjgTvLibCi579fCoCwTi7CX7BabRRw
+    [scope] => email profile https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/userinfo.profile
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 14:31:16 Europe/Berlin] Authorization code received
+[25-Nov-2025 14:31:16 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 14:31:17 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2t1hJmYczUW8hupIB7UGYUAGoHbBKvKknSPvgFkAGt0MXHdk8S0_2ndpdNU5PIY_hdObALkBpkw-_N7PhzjgYyloMHC9uVqXNTIi88YWQsqYIg7Qizazn7AszY9OP2MfRm9CxGY65CemypbqOcHQOiHZTxQK4Keih-8V047AP-yM82OcgiJ6Sh0KWhWbiZHd1ZVUoz0oyGsIf5690zBmBnSvJp9pxfWE_xklaZyWqjG5YIAC0uq9zM2fipItZ2B1wamJorYpw5Z6LowQ5ZO9E-ZIAaCgYKAUYSARUSFQHGX2MidvqhMiptovzR5gobpxkgCQ0293
+    [expires_in] => 3599
+    [scope] => https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJZYVRLSF9tZmJzUkFvNVVseTNDOWFnIiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDc3NDc3LCJleHAiOjE3NjQwODEwNzd9.W5uhATCQAibf7UnOwPi0Xvecv8JMNWA-7Y0Ze94jGjfQ9qik7xs-tIX-uRdUPnoRRg1wttxgmlgq5-gsSNiSbUTHFau563gxLOjakzqr-gv51FfegUjrUNWFUOQ-k8KUgaoTqhJk2VgBxb5VwQioeMsIacGwvnqDbuw-e-onEKp4xr93xSwagxEo0s6VCt6AAcz76bzPk6CtcKwlBd_HgfKfyZJypGnr9TQZApZaRUpnibECqO7BV_TXUN0T6XgzUN29hUdL3kWsV8Rj1RreJWMGkWiE-xpEp66FISsMkqpWt9sYPQzIYzEy4ZZDUskAaU3ZI0omfHSp3Lg7CQpmlw
+    [created] => 1764077477
+)
+
+[25-Nov-2025 14:31:17 Europe/Berlin] Access token set successfully
+[25-Nov-2025 14:31:17 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 14:31:17 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 14:31:17 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 14:31:17 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 14:31:17 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 14:31:17 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 14:31:17 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 14:31:17 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 14:31:17 Europe/Berlin] Session created successfully
+[25-Nov-2025 14:31:17 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 14:31:17 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 14:31:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:19 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:19 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:19 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:19 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:19 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:19 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:19 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:19 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:19 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:19 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:31:45 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:31:45 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:31:45 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:31:45 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:31:45 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:31:45 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:31:45 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:42:30 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:42:30 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:42:30 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:42:30 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:42:30 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:42:30 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:42:30 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:42:45 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:42:45 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:42:45 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:42:45 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:42:45 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:42:45 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:42:45 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:42:45 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:42:45 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:42:45 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:42:45 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:42:45 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:42:45 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:42:45 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:42:52 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:42:52 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:42:52 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:42:52 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:42:52 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:42:52 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:42:52 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:42:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:42:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:42:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:42:54 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:42:54 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:42:54 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:42:54 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:42:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:42:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:42:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:42:55 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:42:55 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:42:55 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:42:55 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:00 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:00 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:00 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:00 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:00 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:00 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:00 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:00 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:00 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:00 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:00 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:00 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:00 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:00 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:03 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:03 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:03 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:03 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:03 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:03 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:03 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:06 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:06 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:06 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:06 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:06 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:06 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:06 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:06 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:06 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:06 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:07 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:07 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:07 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:07 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:49 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:49 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:49 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:49 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:49 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:49 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:49 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:43:49 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:43:49 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:43:49 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:43:50 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:43:50 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:43:50 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:43:50 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:44:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:44:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:44:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:44:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:44:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:44:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:44:13 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:44:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:44:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:44:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:44:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:44:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:44:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:44:13 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:45:14 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:45:14 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:45:14 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:45:14 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:45:14 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:45:14 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:45:14 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:45:14 Europe/Berlin] === FACEBOOK LOGIN INITIATED ===
+[25-Nov-2025 14:45:14 Europe/Berlin] ❌ Facebook client is not initialized
+[25-Nov-2025 14:45:14 Europe/Berlin] Checking Facebook configuration...
+[25-Nov-2025 14:45:14 Europe/Berlin] Config status:
+[25-Nov-2025 14:45:14 Europe/Berlin]  - App ID: SET
+[25-Nov-2025 14:45:14 Europe/Berlin]  - App Secret: SET
+[25-Nov-2025 14:45:14 Europe/Berlin]  - Redirect URI: https://a978c71db589eef220c5b79eb87085dd.serveo.net/auth/facebook_callback
+[25-Nov-2025 14:45:15 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:45:15 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:45:15 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:45:15 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:45:15 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:45:15 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:45:15 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:45:17 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:45:17 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:45:17 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:45:17 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:45:17 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:45:17 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:45:17 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:45:17 Europe/Berlin] === FACEBOOK LOGIN INITIATED ===
+[25-Nov-2025 14:45:17 Europe/Berlin] ❌ Facebook client is not initialized
+[25-Nov-2025 14:45:17 Europe/Berlin] Checking Facebook configuration...
+[25-Nov-2025 14:45:17 Europe/Berlin] Config status:
+[25-Nov-2025 14:45:17 Europe/Berlin]  - App ID: SET
+[25-Nov-2025 14:45:17 Europe/Berlin]  - App Secret: SET
+[25-Nov-2025 14:45:17 Europe/Berlin]  - Redirect URI: https://hiretech.infinityfree.me/auth/facebook_callback
+[25-Nov-2025 14:45:17 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:45:17 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:45:17 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:45:17 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:45:17 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:45:17 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:45:17 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:47:24 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:47:24 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:47:24 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:47:24 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:47:24 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:47:24 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:47:24 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:47:28 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:47:28 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:47:28 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:47:28 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:47:28 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:47:28 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:47:28 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:47:29 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:47:29 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:47:29 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:47:29 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:47:29 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:47:29 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:47:29 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:47:31 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:47:31 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:47:31 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:47:31 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:47:31 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:47:31 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:47:31 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:47:31 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:47:31 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:47:31 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:47:31 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:47:31 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:47:31 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:47:31 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:48:12 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:48:12 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:48:12 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:48:12 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:48:12 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:48:12 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:48:12 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:48:12 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:48:12 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:48:12 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:48:12 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:48:12 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:48:12 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:48:12 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:49:47 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:49:47 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:49:47 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:49:47 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:49:47 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:49:47 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:49:47 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:49:47 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:49:47 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:49:47 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:49:48 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:49:48 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:49:48 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:49:48 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:49:48 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:49:48 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:49:48 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:49:48 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:49:48 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:49:48 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:49:48 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:49:48 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:49:48 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:49:48 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:49:48 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:49:48 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:49:48 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:49:48 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:53:35 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:53:35 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:53:35 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:53:36 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:53:36 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:53:36 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 14:53:36 Europe/Berlin] Facebook SDK not found at: C:\xampp\htdocs\HireTech\app\controllers/../libraries/facebook-sdk/src/Facebook/
+[25-Nov-2025 14:56:42 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:42 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:42 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:42 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:42 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:43 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:43 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:43 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:43 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:43 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:44 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:44 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:44 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:44 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:44 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:56 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:56 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:56 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:56 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:56 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:58 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:58 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:58 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:58 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:58 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:58 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:58 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:58 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:58 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:58 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:59 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:59 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:59 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:56:59 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:56:59 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:56:59 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:56:59 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:56:59 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:57:00 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:57:00 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:57:00 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:57:00 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:57:00 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:57:00 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:57:00 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:57:03 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:57:03 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:57:03 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:57:03 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:57:03 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 14:57:04 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 14:57:04 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 14:57:04 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 14:57:04 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 14:57:04 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:00:56 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:00:56 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:00:56 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:00:56 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:00:56 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:00:56 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:00:56 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:06 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:06 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:06 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:06 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:06 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:06 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:06 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:07 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:07 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:07 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:07 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:07 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:07 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:07 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:10 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:10 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:10 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:10 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:10 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:10 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:10 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:10 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:10 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:10 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:10 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:10 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:10 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:10 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:15 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:15 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:15 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:15 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:15 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:15 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:15 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:19 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:19 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:19 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:19 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:19 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:01:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:01:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:01:19 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:01:19 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:01:19 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:01:19 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:01:19 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:04:12 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:04:12 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:04:12 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:04:12 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:04:12 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:04:12 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT v5.x (MANUAL DOWNLOAD) ===
+[25-Nov-2025 15:04:12 Europe/Berlin] ❌ Facebook SDK v5.x not found at: C:\xampp\htdocs\HireTech\app\controllers/../../libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:05:54 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:05:54 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:05:54 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:05:54 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:05:54 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:05:54 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:05:54 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:05:56 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:05:56 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:05:56 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:05:56 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:05:56 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:05:56 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:05:56 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:05:56 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:05:56 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:05:56 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:05:56 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:05:56 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:05:56 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:05:56 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:06:01 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:06:01 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:06:01 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:06:02 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:06:02 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:06:02 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:06:02 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:06:05 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:06:05 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:06:05 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:06:05 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:06:05 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:06:05 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:06:05 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:06:05 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:06:05 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:06:05 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:06:05 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:06:05 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:06:05 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:06:05 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:06:08 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:06:08 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:06:08 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:06:08 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:06:08 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:06:08 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:06:08 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:06:08 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:06:08 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:06:08 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:06:08 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:06:08 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:06:08 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:06:08 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:06:25 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:06:25 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:06:25 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:06:25 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:06:25 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:06:25 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:06:25 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:07:02 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:07:02 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:07:02 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:07:02 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:07:02 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:07:02 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:07:02 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:08:01 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:08:01 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:08:01 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:08:01 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:08:01 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:08:01 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:08:01 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:09:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:09:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:09:13 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:09:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:09:13 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:09:13 Europe/Berlin] === INITIALIZING FACEBOOK CLIENT ===
+[25-Nov-2025 15:09:13 Europe/Berlin] ❌ Facebook SDK not found at: C:/xampp/htdocs/HireTech/libraries/php-graph-sdk-5.x/src/Facebook/
+[25-Nov-2025 15:10:16 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:10:16 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:10:16 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:10:16 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:10:16 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:10:16 Europe/Berlin] === INITIALIZING FACEBOOK VIA CDN ===
+[25-Nov-2025 15:11:08 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:11:08 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:11:08 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:11:08 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:11:08 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:11:08 Europe/Berlin] === INITIALIZING FACEBOOK VIA CDN ===
+[25-Nov-2025 15:16:20 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:16:20 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:16:20 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:16:20 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:16:20 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:16:20 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 15:16:20 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 15:16:22 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:16:22 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:16:22 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:16:23 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:16:23 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:16:23 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 15:16:23 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 15:16:23 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:16:23 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:16:23 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:16:23 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:16:23 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:16:23 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 15:16:23 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 15:20:24 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:20:24 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:20:24 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:20:24 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:20:24 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:20:24 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 15:20:24 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 15:20:25 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:20:25 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:20:25 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:20:25 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:20:25 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:20:25 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 15:20:25 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 15:20:25 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 15:20:25 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 15:20:25 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 15:20:25 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 15:20:25 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 15:20:25 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 15:20:25 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 15:20:25 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 15:20:25 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j91H0PQagfFm6GGp9gz_S8r98SCPqgEnjC11jNCGWS2byYMycCzmNSxlHBO__Hm74A
+    [scope] => email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 15:20:25 Europe/Berlin] Authorization code received
+[25-Nov-2025 15:20:25 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 15:20:26 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2snsToQzSwxH8w36w7L7mKW4fVGEDyk_nEZFx5QO45ePwc55REIV9dYKqz1R81A4KWgED-u62tKNMImyU2OG_szswqzU1pppDOQNTWXNl4si5pqgG-LyIrHtl1YNm_UOsMqGZomqtVRC9gzhWGgpIFwbLoAvwu8Pb1hTk6VeKoheuZM6gbr8Twwu3zh_NZ4OpPjmHXh7FEFBs0obMy0qQsl6Nlqq5yGkcVMxWvupADXXEKHbNDm93CsJXO2FVhUdaZUf0Wf4rXTx1sGDTqZnDeoxRwaCgYKAXMSARUSFQHGX2Mi3rfBpNQZUKFZDOMegOTkiQ0294
+    [expires_in] => 3598
+    [scope] => https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJkbHlFcUloVFRRUlUwUm90T0ZNdGZ3IiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDgwNDI3LCJleHAiOjE3NjQwODQwMjd9.WszBubKD5Y2PCjzmqSkiUoBPLz4_1OQ-bH-mbk7G8bgJatSEp611r9k-mDw25-snWLl-edvfRgAUG6FG3OO42peMr2cEFljS7rjDhgOh5lnkgPN6GJiiSSBoc_gi4HLF1G7gtheeJW0_MGefoSEB_Xyud8H1VkuxKWjugisers-kATDsmfolnH7UI-AySoD3Hu1emBUSb6kkYbQHveEL2fMOU-LL1ShR1tclBMfT9_C8S-4Y99W4bfQEsnqK2qtCXL81y0tvI5yP8tRDB2a84sLF1A_x8-IrrJV74bcfawBGNt_uI3jh-G4nY4h6eQ9s924Sh8jUpAiyrnhXuarQ5Q
+    [created] => 1764080426
+)
+
+[25-Nov-2025 15:20:26 Europe/Berlin] Access token set successfully
+[25-Nov-2025 15:20:26 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 15:20:26 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 15:20:26 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 15:20:26 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 15:20:26 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 15:20:26 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 15:20:26 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 15:20:26 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 15:20:26 Europe/Berlin] Session created successfully
+[25-Nov-2025 15:20:26 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 15:20:26 Europe/Berlin] Redirecting based on role: job_seeker
+[25-Nov-2025 16:52:26 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 16:52:26 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 16:52:26 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 16:52:26 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 16:52:26 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 16:52:26 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 16:52:26 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 16:52:26 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[25-Nov-2025 16:52:26 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[25-Nov-2025 16:52:26 Europe/Berlin] Composer autoload found, requiring...
+[25-Nov-2025 16:52:26 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[25-Nov-2025 16:52:26 Europe/Berlin] Google Client initialized successfully
+[25-Nov-2025 16:52:26 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[25-Nov-2025 16:52:26 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[25-Nov-2025 16:52:26 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[25-Nov-2025 16:52:26 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j92xV0SpNKTrDyUzFKFGDXa0GvJPaIqmVGr0Pf8SRJXKnWUUYV0qwxV_EGagxuKL9w
+    [scope] => email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email
+    [authuser] => 0
+    [prompt] => none
+)
+
+[25-Nov-2025 16:52:26 Europe/Berlin] Authorization code received
+[25-Nov-2025 16:52:26 Europe/Berlin] Exchanging code for token...
+[25-Nov-2025 16:52:27 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2siJ_0ym7wevjxF0cfYk1P2ZCfqplYXpEedtpDwV0nZdVG_PRTt_SHs3i6FyUZ2AFbM5GjlhNbIWGMcT4noOmO6diphu--K1hhFUSpLHnPxW20rVngkoiOSAtwjIb2n7nypbLb4TCEoRJt8nzCP3LD0ZclNWeytLx7DyQBPXQK43wJ7HreFyJ0jk2YYO-Ln7Ek13G1oMcBer82pX2iQGRS2T0YdZcejZFArGJPfBwPvxltA6SC9sa5Jh-GavxxUxcXIChfCXPCs1Jxzb6L3G9g9ZBwaCgYKAWMSARUSFQHGX2MiQN0TihlPBjd2DfRngTGXpQ0294
+    [expires_in] => 3598
+    [scope] => https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ3WDdtMlR5VURvcmd1eUpEaG9BLV93IiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MDg1OTQ4LCJleHAiOjE3NjQwODk1NDh9.Ge6xkGgQPKTz6LUIKUKmqWajEn_-XDIgzyLP53fuvCFo6FYSw38kvwZ0ErK6uYFO3jiRHm5a90jWOW64kxtMK5qpD8Ljy8JDrVnBdNHlsq8XjoXEMHzyixe3nNCU6N0OvV0-8hj-rrOcHUzZDlIdvxXqXe22C3rIJC78qqTaI_t9sttSRym09rI454w8SpEgqO6xsd_neVJh3jabEQkKnOgV4ojJiQWl6QeNrK-YM6cNKNug_y98WYwjzq8s11VD43CtZrwME_hpfw6EYmCDb_YVTdQohgY8l8Tu46uj60E97tM2i47yL5GqlS8eYdFYr4MpzQSrzeZnXRiTGRAV6g
+    [created] => 1764085947
+)
+
+[25-Nov-2025 16:52:27 Europe/Berlin] Access token set successfully
+[25-Nov-2025 16:52:27 Europe/Berlin] Google user info retrieved:
+[25-Nov-2025 16:52:27 Europe/Berlin]  - ID: 111346219213719540282
+[25-Nov-2025 16:52:27 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[25-Nov-2025 16:52:27 Europe/Berlin]  - Email: chimen0531@gmail.com
+[25-Nov-2025 16:52:27 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[25-Nov-2025 16:52:27 Europe/Berlin] Checking if user is registered...
+[25-Nov-2025 16:52:27 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[25-Nov-2025 16:52:27 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[25-Nov-2025 16:52:27 Europe/Berlin] Session created successfully
+[25-Nov-2025 16:52:27 Europe/Berlin] Redirecting to dashboard...
+[25-Nov-2025 16:52:27 Europe/Berlin] Redirecting based on role: job_seeker
+[26-Nov-2025 05:41:52 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 05:41:52 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 05:41:52 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 05:41:52 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 05:41:52 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 05:41:52 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 05:41:52 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:21:19 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:21:19 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:21:19 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:21:21 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:21:21 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:21:21 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:21:21 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:21:23 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:21:23 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:21:23 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:21:23 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:21:23 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:21:23 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:21:23 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:21:23 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:21:23 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:21:23 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:21:23 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:21:23 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:21:23 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:21:23 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:21:23 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[26-Nov-2025 15:21:23 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j9233UUfGqUl5kKWdtJwqjC-NvVVnLFbZAREOfa1oaocwCOnhPEOYMSTCK7RJxakAg
+    [scope] => email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
+    [authuser] => 0
+    [prompt] => none
+)
+
+[26-Nov-2025 15:21:23 Europe/Berlin] Authorization code received
+[26-Nov-2025 15:21:23 Europe/Berlin] Exchanging code for token...
+[26-Nov-2025 15:21:26 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2tdkYl7bAgRMTST2iEMhW0Ft8tJQvl6Cb8-u3mGRcI5obeXYAR6_AG1AW6-Ia4OjNjGy9sqtHjOKvUrvlYxiAmOb0IeeSxBTiZx25zCw0xrQEOW2sErOTIb7QUepsteDyVK8wvvKAYm1F90qiLLKTQ0MrnMXeOQ3f0F-UrDPJu2EtkqnuL5Lukcq_tNB8B-H48-KaQbDHNJyST-QaTgS9NSu3YSNFNXiPbdSQPxENiBqZvD8r71dYXUuCHYFJfo6ItO2ReqR-4WcnZ-RIh_qm_6rdEaCgYKATISARUSFQHGX2Mi70p3NcZ6pFCL2AGhQDk6uA0294
+    [expires_in] => 3597
+    [scope] => https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI0YWxwWUs3ckVhTmprdVVHNHZlQ0l3IiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MTY2ODg2LCJleHAiOjE3NjQxNzA0ODZ9.E1h4oXGorRTwtcUYGQLMMG57ixMZ-b9M-kbENcleKkpMdnpBnPoyugYHlvC5jjI1q5aWoSR4oIjLL8g2c5ItJNkLV7-CzyPD4CbuWp2IeGFXub7axv3jCI-8c6mGEEnH6WFVh059p41-gVAC0_3I95cdE-83gfGbPTQRx-ajUpBKQ1Pw_TSvQqO5GKJFsMIVwmT_PLCjE6yeKwnjxgWZ8f0estobh1NqLRfk6QQz5n8Qps5sEGk84pgFHDymQyQg4CwbrrB9hJhNMiEh3nHVKwVeK60-Y0T74n3kg0U2FmUcHqZVHT584TCGFLijtvMbpFyYatcIhNZ5PgKy18Vtbw
+    [created] => 1764166886
+)
+
+[26-Nov-2025 15:21:26 Europe/Berlin] Access token set successfully
+[26-Nov-2025 15:21:26 Europe/Berlin] Google user info retrieved:
+[26-Nov-2025 15:21:26 Europe/Berlin]  - ID: 111346219213719540282
+[26-Nov-2025 15:21:26 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[26-Nov-2025 15:21:26 Europe/Berlin]  - Email: chimen0531@gmail.com
+[26-Nov-2025 15:21:26 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[26-Nov-2025 15:21:26 Europe/Berlin] Checking if user is registered...
+[26-Nov-2025 15:21:27 Europe/Berlin] User found with Google ID: chimen0531@gmail.com
+[26-Nov-2025 15:21:27 Europe/Berlin] User successfully authenticated: chimen0531@gmail.com
+[26-Nov-2025 15:21:27 Europe/Berlin] Session created successfully
+[26-Nov-2025 15:21:27 Europe/Berlin] Redirecting to dashboard...
+[26-Nov-2025 15:21:27 Europe/Berlin] Redirecting based on role: job_seeker
+[26-Nov-2025 15:21:33 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:21:33 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:21:33 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:21:33 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:21:33 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:21:33 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:21:33 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:21:34 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:21:34 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:21:34 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:21:34 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:21:34 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:21:34 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:21:34 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:24:43 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:24:43 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:24:43 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:24:43 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:24:43 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:24:43 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:24:43 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:24:43 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:24:43 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:24:43 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:24:43 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:24:43 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:24:43 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:24:43 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:24:45 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:24:45 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:24:45 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:24:45 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:24:45 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:24:45 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:24:45 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:24:49 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:24:49 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:24:49 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:24:50 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:24:50 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:24:50 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:24:50 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:24:50 Europe/Berlin] Redirecting based on role: job_seeker
+[26-Nov-2025 15:24:57 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:24:57 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:24:57 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:24:57 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:24:57 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:24:57 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:24:57 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:34:10 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:34:10 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:34:10 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:34:10 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:34:10 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:34:10 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:34:10 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:34:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:34:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:34:13 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:34:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:34:13 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:34:13 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:34:13 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:34:13 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:34:13 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:34:13 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:34:13 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:34:13 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:34:13 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:34:13 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:34:13 Europe/Berlin] === GOOGLE CALLBACK REACHED ===
+[26-Nov-2025 15:34:13 Europe/Berlin] GET parameters: Array
+(
+    [code] => 4/0Ab32j919A5HpVvZyGMbu9LK0b-8E7YuzdUsosMh34Z3BurjD-upX_VMAQY8ezPOLx8x5ww
+    [scope] => email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [authuser] => 0
+    [prompt] => none
+)
+
+[26-Nov-2025 15:34:13 Europe/Berlin] Authorization code received
+[26-Nov-2025 15:34:13 Europe/Berlin] Exchanging code for token...
+[26-Nov-2025 15:34:14 Europe/Berlin] Token response: Array
+(
+    [access_token] => ya29.A0ATi6K2stjtqQZ5OVoZUJsdmjHvefKNaBxM956Z8Dt9uYMxsoxj7X5DlhnU1-WhSM99IPpWjW_POam8TS16u8FsPBYwcsF0jD0WEAvavQZCXgp44pnkAqLe8CJTAyqTgl6X3D2WcuNVrd2C_3op84ew3-1x8J5DvRpbFDfRCZqvzTI52y-sIh9zU0uSKQNDDdRRYwexur3Aoy4S-ZOJ4Qk1eqlbMR8e0NxmHAn7hzZVU5tknOVigaEkKvKdRRTpceILOo7aQeYFaRN09CXSGiOVlSQYMg7kYaCgYKAWMSARUSFQHGX2MiDYchLHXUamdr_Wan3XHwUQ0294
+    [expires_in] => 3598
+    [scope] => https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid
+    [token_type] => Bearer
+    [id_token] => eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzYTkzNThjY2Y5OWYxYmIwNDBiYzYyMjFkNTQ5M2UxZmZkOGFkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTUzMDQxNzAyOTctNWZqNmtiZ21kZ2g3dHBudGpyYWhyZTlqb2NmbnRnMGguYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEzNDYyMTkyMTM3MTk1NDAyODIiLCJlbWFpbCI6ImNoaW1lbjA1MzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJMMFc3QmhxZmF0ejR1dEpVTllGYVZnIiwibmFtZSI6Ik1FTkRPWkEgQ0hSSVNUSUFOIFAuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pRdGNIQnZRazN4TEVQbkZkbGJMTjJ1dG96Qm1PQ1RDX0JvMVdtOHA3LTNxZFc0ZUU9czk2LWMiLCJnaXZlbl9uYW1lIjoiTUVORE9aQSIsImZhbWlseV9uYW1lIjoiQ0hSSVNUSUFOIFAuIiwiaWF0IjoxNzY0MTY3NjU1LCJleHAiOjE3NjQxNzEyNTV9.eq_GilT1c0ZUecia6vMIaZ1T0YYmW8WgczE7XevHXnjHg3R61whO5jQ38UNcfG6UqOu33Qnmek4FslVIHlDJ2Nn4mrcWoBdVOc4ZL9fQJlnjaPRQze4pdvaK41Qdjt0P8fc2sAgZSLQmA5p2E5RokG6gV-NkH7vKVTvXlE9M-csy2HVh8XqUTUSzab34jIbdQA9MDLxRNx8RNoE894D3KNMjLq1-9qjRAN4eTQ4njTDLSi3P6sIuWMpPwaleCtVA-ITeXcV6laQGv5g4zzLuNlSQeK8L9QZf8GI2mI6W24tiJSHUZNlLIeUVCdYkTY2nq9M89-CxrPrt6fFFTplRwA
+    [created] => 1764167654
+)
+
+[26-Nov-2025 15:34:14 Europe/Berlin] Access token set successfully
+[26-Nov-2025 15:34:14 Europe/Berlin] Google user info retrieved:
+[26-Nov-2025 15:34:14 Europe/Berlin]  - ID: 111346219213719540282
+[26-Nov-2025 15:34:14 Europe/Berlin]  - Name: MENDOZA CHRISTIAN P.
+[26-Nov-2025 15:34:14 Europe/Berlin]  - Email: chimen0531@gmail.com
+[26-Nov-2025 15:34:14 Europe/Berlin]  - Picture: https://lh3.googleusercontent.com/a/ACg8ocJQtcHBvQk3xLEPnFdlbLN2utozBmOCTC_Bo1Wm8p7-3qdW4eE=s96-c
+[26-Nov-2025 15:34:14 Europe/Berlin] Checking if user is registered...
+[26-Nov-2025 15:38:53 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:38:53 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:38:53 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:38:53 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:38:53 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:38:53 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:38:53 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:38:58 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:38:58 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:38:58 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:38:58 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:38:58 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:38:58 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:38:58 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk
+[26-Nov-2025 15:38:58 Europe/Berlin] Redirecting based on role: job_seeker
+[26-Nov-2025 15:39:03 Europe/Berlin] === INITIALIZING GOOGLE CLIENT ===
+[26-Nov-2025 15:39:03 Europe/Berlin] Looking for autoload at: C:\xampp\htdocs\HireTech/vendor/autoload.php
+[26-Nov-2025 15:39:03 Europe/Berlin] Composer autoload found, requiring...
+[26-Nov-2025 15:39:03 Europe/Berlin] Google config: Array
+(
+    [client_id] => 255304170297-5fj6kbgmdgh7tpntjrahre9jocfntg0h.apps.googleusercontent.com
+    [client_secret] => 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
+    [redirect_uri] => http://localhost:3000/auth/google_callback
+)
+
+[26-Nov-2025 15:39:03 Europe/Berlin] Google Client initialized successfully
+[26-Nov-2025 15:39:03 Europe/Berlin] === INITIALIZING FACEBOOK SDK ===
+[26-Nov-2025 15:39:03 Europe/Berlin] ❌ Facebook SDK not found. Please download from: https://github.com/facebook/php-graph-sdk

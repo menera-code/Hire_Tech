@@ -87,7 +87,6 @@ $autoload['libraries'] = array('database');
 |	$autoload['helpers'] = array('url', 'file');
 */
 $autoload['helpers'] = array('url');
-
 /*
 | -------------------------------------------------------------------
 |  Auto-load Models

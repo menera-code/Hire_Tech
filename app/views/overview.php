@@ -858,6 +858,30 @@ if ($show_job_details_modal && $job_details_job_id) {
                 max-height: 350px;
             }
         }
+
+        /* Additional styles for the resume preview modal */
+#resumePreviewModal .modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#pdfViewerContainer {
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #resumePreviewModal .modal-content {
+        width: 95%;
+        height: 95vh;
+        margin: 10px;
+    }
+    
+    .resume-actions {
+        flex-direction: column;
+    }
+}
+</style>
     </style>
 </head>
 <body>
@@ -1297,14 +1321,23 @@ if ($show_job_details_modal && $job_details_job_id) {
                 <div style="margin: 20px 0;">
                     <h5 style="margin-bottom: 10px; color: var(--dark);">Resume</h5>
                     <div style="background: var(--gray-50); padding: 16px; border-radius: 8px; border: 1px solid var(--gray-200); text-align: center;">
-                        <a href="/<?= htmlspecialchars($applicant['profile']['resume_file']) ?>" 
+                        
+                    
+                    
+                    <a href="/<?= htmlspecialchars($applicant['profile']['resume_file']) ?>" 
                            class="btn btn-primary" 
                            target="_blank" 
                            download="resume_<?= htmlspecialchars($applicant['name']) ?>.pdf">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
+                    <div>-------------------------------------------------------OR-------------------------------------------------------</div>
+
+                                    <!-- Preview Button -->
+                        <a class="btn btn-info" onclick="openResumePreview('<?= htmlspecialchars($applicant['profile']['resume_file']) ?>', '<?= htmlspecialchars($applicant['name']) ?>')">
+                            <i class="fas fa-eye"></i> Preview Resume
+                        </a>
                         <p style="margin-top: 10px; color: var(--gray-600); font-size: 0.9rem;">
-                            Click to download the applicant's resume
+                            Click to download or preview the applicant's resume
                         </p>
                     </div>
                 </div>
@@ -1322,6 +1355,53 @@ if ($show_job_details_modal && $job_details_job_id) {
     </div>
 </div>
 <?php endif; ?>
+
+
+
+<!-- Resume Preview Modal -->
+<div id="resumePreviewModal" class="modal">
+    <div class="modal-content" style="max-width: 900px; height: 90vh;">
+        <div class="modal-header">
+            <h3>Resume Preview - <span id="resumeApplicantName"></span></h3>
+            <button class="modal-close" onclick="closeResumePreview()">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 0; height: calc(100% - 120px);">
+            <!-- PDF Viewer Container -->
+            <div id="pdfViewerContainer" style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; background: var(--gray-100);">
+                <div id="pdfViewer" style="width: 100%; height: 100%;">
+                    <!-- PDF will be displayed here -->
+                    <iframe id="pdfFrame" style="width: 100%; height: 100%; border: none; border-radius: 0 0 8px 8px;" 
+                            frameborder="0"></iframe>
+                </div>
+                
+                <!-- Fallback for non-PDF files -->
+                <div id="fileFallback" style="display: none; text-align: center; padding: 40px;">
+                    <i class="fas fa-file fa-3x" style="color: var(--gray-400); margin-bottom: 15px;"></i>
+                    <h4 style="color: var(--gray-600); margin-bottom: 10px;">File Preview Not Available</h4>
+                    <p style="color: var(--gray-500);">This file type cannot be previewed in the browser.</p>
+                    <a href="#" id="fallbackDownload" class="btn btn-primary" style="margin-top: 15px;">
+                        <i class="fas fa-download"></i> Download File
+                    </a>
+                </div>
+                
+                <!-- Loading State -->
+                <div id="pdfLoading" style="display: none; text-align: center;">
+                    <i class="fas fa-spinner fa-spin fa-2x" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <p style="color: var(--gray-600);">Loading resume...</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" onclick="closeResumePreview()">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <a href="#" id="previewDownloadBtn" class="btn btn-primary" target="_blank" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+</div>
+
 
     <!-- Remove Application Confirmation Modal -->
     <?php if ($show_remove_modal && $remove_application): ?>
@@ -1793,6 +1873,89 @@ $(document).ready(function() {
             window.location.href = '/dashboard/overview';
         }
     });
+});
+
+
+
+function openResumePreview(resumeFile, applicantName) {
+    const modal = document.getElementById('resumePreviewModal');
+    const pdfFrame = document.getElementById('pdfFrame');
+    const fallbackSection = document.getElementById('fileFallback');
+    const pdfViewer = document.getElementById('pdfViewer');
+    const loadingSection = document.getElementById('pdfLoading');
+    const applicantNameSpan = document.getElementById('resumeApplicantName');
+    const downloadBtn = document.getElementById('previewDownloadBtn');
+    const fallbackDownload = document.getElementById('fallbackDownload');
+    
+    // Set applicant name
+    applicantNameSpan.textContent = applicantName;
+    
+    // Show loading state
+    pdfViewer.style.display = 'none';
+    fallbackSection.style.display = 'none';
+    loadingSection.style.display = 'block';
+    
+    // Show modal
+    modal.classList.add('active');
+    
+    // Check if file is PDF
+    const fileExtension = resumeFile.split('.').pop().toLowerCase();
+    
+    if (fileExtension === 'pdf') {
+        // For PDF files, use iframe embedding
+        setTimeout(() => {
+            pdfFrame.src = '/' + resumeFile + '#view=FitH';
+            pdfViewer.style.display = 'block';
+            loadingSection.style.display = 'none';
+        }, 500);
+        
+        // Set download link
+        downloadBtn.href = '/' + resumeFile;
+        downloadBtn.setAttribute('download', 'resume_' + applicantName + '.pdf');
+    } else {
+        // For non-PDF files, show fallback
+        setTimeout(() => {
+            pdfViewer.style.display = 'none';
+            fallbackSection.style.display = 'block';
+            loadingSection.style.display = 'none';
+            
+            // Set fallback download link
+            fallbackDownload.href = '/' + resumeFile;
+            fallbackDownload.setAttribute('download', 'resume_' + applicantName + '.' + fileExtension);
+        }, 500);
+        
+        // Set download link for non-PDF as well
+        downloadBtn.href = '/' + resumeFile;
+        downloadBtn.setAttribute('download', 'resume_' + applicantName + '.' + fileExtension);
+    }
+}
+
+function closeResumePreview() {
+    const modal = document.getElementById('resumePreviewModal');
+    const pdfFrame = document.getElementById('pdfFrame');
+    
+    // Hide modal
+    modal.classList.remove('active');
+    
+    // Reset iframe source
+    setTimeout(() => {
+        pdfFrame.src = '';
+    }, 300);
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById('resumePreviewModal');
+    if (e.target === modal) {
+        closeResumePreview();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeResumePreview();
+    }
 });
     
     </script>

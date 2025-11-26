@@ -148,3 +148,16 @@ $router->get('/dashboard/cancel_application', 'DashboardController@cancel_applic
 // Add this route
 // Add this route for the application page
 $router->get('/dashboard/application', 'DashboardController@application');
+
+$router->get('/auth/facebook', 'AuthController@facebook_login');
+$router->get('/auth/facebook_callback', 'AuthController@facebook_callback');
+
+// For users visiting directly (GET requests)
+$router->get('/auth/facebook_data_deletion', 'AuthController@facebook_data_deletion');
+
+// For Facebook's automated system (POST requests)
+$router->post('/auth/facebook_data_deletion', 'AuthController@facebook_data_deletion_callback');
+
+$router->get('/test_facebook', 'AuthController@test_facebook_debug');
+$router->get('/find_sdk', 'AuthController@find_facebook_sdk');
+$router->get('/check_facebook', 'AuthController@check_facebook_folder');

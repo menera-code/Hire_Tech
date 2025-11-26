@@ -42,7 +42,10 @@ class ComposerAutoloaderInit781caf66ceb7d160327caf1c2642152c
             }
         }, null, null);
         foreach ($filesToLoad as $fileIdentifier => $file) {
-            $requireFile($fileIdentifier, $file);
+           
+           if (strpos($file, 'config/app.php') !== false) {
+        continue;
+    } $requireFile($fileIdentifier, $file);
         }
 
         return $loader;
