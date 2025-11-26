@@ -1,7 +1,9 @@
 RewriteEngine On
 
-# More specific conditions to prevent loops
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
-RewriteRule ^(?!index\.html$).*$ /index.html [L,NC]
+# If an existing asset or directory is requested, serve it directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# If the requested resource doesn't exist, use index.html
+RewriteRule ^(?!.*\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|json)$).*$ /index.html [L,NC]
