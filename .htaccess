@@ -1,20 +1,7 @@
 RewriteEngine On
 
-# Set the base URL for your application
-# For Render, you might need to use just "/"
-RewriteBase /
-
-# If the above doesn't work, try your specific Render URL
-# RewriteBase /
-
-# Redirect all requests to index.html for SPA routing
+# More specific conditions to prevent loops
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-
-# Optional: Security headers
-<IfModule mod_headers.c>
-    Header always set X-Content-Type-Options nosniff
-    Header always set X-Frame-Options DENY
-    Header always set X-XSS-Protection "1; mode=block"
-</IfModule>
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
+RewriteRule ^(?!index\.html$).*$ /index.html [L,NC]
