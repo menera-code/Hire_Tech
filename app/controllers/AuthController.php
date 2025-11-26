@@ -144,7 +144,7 @@ private function initializeFacebookManual() {
         return [
             'client_id' => $_ENV['GOOGLE_CLIENT_ID'] ?? '',
             'client_secret' => $_ENV['GOOGLE_CLIENT_SECRET'] ?? '',
-            'redirect_uri' => $_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost:3000/auth/google_callback'
+            'redirect_uri' => $_ENV['GOOGLE_REDIRECT_URI'] ?? 'https://hire-tech.onrender.com/auth/google_callback'
         ];
     }
 private function getFacebookConfig() {
@@ -237,7 +237,7 @@ private function getFacebookConfig() {
             if (!isset($_GET['code'])) {
                 error_log("No authorization code found");
                 $_SESSION['error'] = "No authorization code received from Google.";
-                header('Location: http://localhost:3000/login');
+                header('Location: https://hire-tech.onrender.com/login');
                 exit;
             }
 
@@ -251,7 +251,7 @@ private function getFacebookConfig() {
             if (!$this->googleClient) {
                 error_log("Google Client still not initialized after attempt");
                 $_SESSION['error'] = "Google authentication not configured.";
-                header('Location: http://localhost:3000/login');
+                header('Location: https://hire-tech.onrender.com/login');
                 exit;
             }
 
@@ -292,7 +292,7 @@ private function getFacebookConfig() {
                 if ($user) {
                     error_log("User exists but Google account not linked: " . $email);
                     $_SESSION['error'] = "This email is already registered with a password. Please use email/password login.";
-                    header('Location: http://localhost:3000/login');
+                    header('Location: https://hire-tech.onrender.com/login');
                     exit;
                 } else {
                     error_log("User not registered: " . $email);
@@ -305,7 +305,7 @@ private function getFacebookConfig() {
                     ];
                     
                     $_SESSION['info'] = "Please complete your registration. Your Google information has been pre-filled.";
-                    header('Location: http://localhost:3000/register');
+                    header('Location: https://hire-tech.onrender.com/register');
                     exit;
                 }
             }
@@ -330,7 +330,7 @@ private function getFacebookConfig() {
             error_log("GOOGLE CALLBACK ERROR: " . $e->getMessage());
             error_log("Stack trace: " . $e->getTraceAsString());
             $_SESSION['error'] = "Google authentication failed: " . $e->getMessage();
-            header('Location: http://localhost:3000/login');
+            header('Location: https://hire-tech.onrender.com/login');
             exit;
         }
     }
@@ -351,7 +351,7 @@ private function getFacebookConfig() {
             if (!$this->fb) {
                 error_log("Facebook Client still not initialized after attempt");
                 $_SESSION['error'] = "Facebook authentication not configured.";
-                header('Location: http://localhost:3000/login');
+                header('Location: https://hire-tech.onrender.com/login');
                 exit;
             }
 
@@ -368,7 +368,7 @@ private function getFacebookConfig() {
             if (!isset($accessToken)) {
                 error_log("No access token received from Facebook");
                 $_SESSION['error'] = "No access token received from Facebook.";
-                header('Location: http://localhost:3000/login');
+                header('Location: https://hire-tech.onrender.com/login');
                 exit;
             }
 
@@ -405,7 +405,7 @@ private function getFacebookConfig() {
                     // User exists with email but Facebook account not linked
                     error_log("User exists but Facebook account not linked: " . $email);
                     $_SESSION['error'] = "This email is already registered with a password. Please use email/password login.";
-                    header('Location: http://localhost:3000/login');
+                    header('Location: https://hire-tech.onrender.com/login');
                     exit;
                 } else {
                     // USER NOT REGISTERED - Store Facebook data and redirect to registration
@@ -419,7 +419,7 @@ private function getFacebookConfig() {
                     ];
                     
                     $_SESSION['info'] = "Please complete your registration. Your Facebook information has been pre-filled.";
-                    header('Location: http://localhost:3000/register');
+                    header('Location: https://hire-tech.onrender.com/register');
                     exit;
                 }
             }
@@ -446,7 +446,7 @@ private function getFacebookConfig() {
             error_log("FACEBOOK CALLBACK ERROR: " . $e->getMessage());
             error_log("Stack trace: " . $e->getTraceAsString());
             $_SESSION['error'] = "Facebook authentication failed: " . $e->getMessage();
-            header('Location: http://localhost:3000/login');
+            header('Location: https://hire-tech.onrender.com/login');
             exit;
         }
     }
@@ -627,7 +627,7 @@ private function getFacebookConfig() {
     private function redirectBasedOnRole($role) {
         error_log("Redirecting based on role: " . $role);
         
-        $baseUrl = 'http://localhost:3000/';
+        $baseUrl = 'https://hire-tech.onrender.com';
         
         switch ($role) {
             case 'admin':
