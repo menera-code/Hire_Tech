@@ -1,9 +1,11 @@
-RewriteEngine On
+<IfModule mod_rewrite.c>
+    RewriteEngine On
 
-# If an existing asset or directory is requested, serve it directly
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+    # Serve existing files or directories directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
 
-# If the requested resource doesn't exist, use index.html
-RewriteRule ^(?!.*\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|json)$).*$ /index.html [L,NC]
+    # Otherwise, route everything else to index.html
+    RewriteRule ^ index.html [L]
+</IfModule>
