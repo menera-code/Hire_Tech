@@ -706,6 +706,16 @@ unset($_SESSION['error']);
                                            value="<?= htmlspecialchars($company_profile['company_website'] ?? '') ?>"
                                            placeholder="https://example.com">
                                 </div>
+                                <!-- In the Company Information section, add after company_website field -->
+                                <div class="form-group">
+                                    <label for="google_form_url">Google Form URL (Contact Form)</label>
+                                    <input type="url" id="google_form_url" name="google_form_url" class="form-control" 
+                                        value="<?= htmlspecialchars($company_profile['google_form_url'] ?? '') ?>"
+                                        placeholder="https://docs.google.com/forms/d/e/your-form-id/viewform">
+                                    <small style="color: var(--gray-500); font-size: 0.8rem; margin-top: 5px; display: block;">
+                                        Paste your Google Form URL here. This will be shown to job seekers who want to contact your company.
+                                    </small>
+                                </div>
                                 <div class="form-group">
                                     <label for="company_size">Company Size</label>
                                     <select id="company_size" name="company_size" class="form-control">

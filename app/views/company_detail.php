@@ -908,6 +908,25 @@ function formatDate($dateString) {
                                     </div>
                                 </div>
                                 <?php endif; ?>
+
+
+                                <?php if (!empty($company['google_form_url'])): ?>
+                                <div class="detail-section">
+                                    <h3><i class="fas fa-envelope"></i> Contact Company</h3>
+                                    <div class="detail-content">
+                                        <p>Interested in working at <?= htmlspecialchars($company['company_name']) ?>? Send them a message!</p>
+                                        
+                                        <!-- Contact Button -->
+                                        <button class="btn btn-primary btn-block" id="showContactForm" style="margin-top: 15px;">
+                                            <i class="fas fa-paper-plane"></i> Contact Company
+                                        </button>
+                                        
+                                        <div style="margin-top: 10px; font-size: 0.8rem; color: var(--gray-500); text-align: center;">
+                                            <i class="fas fa-shield-alt"></i> Your information is secure
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php endif; ?>
                             </div>
                         </div>
 
@@ -1029,6 +1048,48 @@ function formatDate($dateString) {
             <?php endif; ?>
         </div>
     </div>
+
+<!-- Google Form Modal -->
+<div id="googleFormModal" class="modal">
+    <div class="modal-content" style="max-width: 900px;">
+        <div class="modal-header">
+            <h3>Contact <?= htmlspecialchars($company['company_name'] ?? 'Company') ?></h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        
+        <div class="modal-body" style="padding: 0;">
+            <!-- Loading State -->
+            <div id="formLoading" style="padding: 40px; text-align: center; background: var(--gray-100);">
+                <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary); margin-bottom: 15px;"></i>
+                <p style="color: var(--gray-600);">Loading contact form...</p>
+            </div>
+            
+            <!-- Google Form Iframe -->
+            <iframe id="googleFormIframe" 
+                    src="" 
+                    width="100%" 
+                    height="600" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    style="display: none; border-radius: 0 0 var(--border-radius) var(--border-radius);"
+                    onload="document.getElementById('formLoading').style.display='none'; this.style.display='block';">
+            </iframe>
+        </div>
+        
+        <div class="modal-actions">
+            <button class="btn btn-secondary close-modal">
+                <i class="fas fa-times"></i> Close
+            </button>
+            <a href="<?= htmlspecialchars($company['google_form_url'] ?? '#') ?>" 
+               target="_blank" 
+               class="btn btn-primary" 
+               id="openInNewTab">
+                <i class="fas fa-external-link-alt"></i> Open in New Tab
+            </a>
+        </div>
+    </div>
+</div>
 
     <!-- Job Details Modal -->
     <div id="jobModal" class="modal">
@@ -1526,6 +1587,80 @@ function formatDate($dateString) {
             console.log('Job details map refreshed');
         }
     }
+
+    // Google Form Modal Functionality
+$(document).ready(function() {
+    const googleFormModal = $('#googleFormModal');
+    const googleFormIframe = $('#googleFormIframe');
+    const formLoading = $('#formLoading');
+    const openInNewTab = $('#openInNewTab');
+    
+    // Show Google Form Modal
+    $('#showContactForm').on('click', function() {
+        const googleFormUrl = '<?= htmlspecialchars(addslashes($company['google_form_url'] ?? '')) ?>';
+        
+        if (!googleFormUrl) {
+            alert('Contact form not available.');
+            return;
+        }
+        
+        // Show loading state
+        formLoading.show();
+        googleFormIframe.hide();
+        
+        // Set iframe source
+        googleFormIframe.attr('src', googleFormUrl);
+        openInNewTab.attr('href', googleFormUrl);
+        
+        // Show modal
+        googleFormModal.fadeIn(300);
+        $('body').css('overflow', 'hidden');
+    });
+    
+    // Close modal functionality for Google Form modal
+    googleFormModal.find('.close-modal').on('click', function() {
+        closeGoogleFormModal();
+    });
+    
+    // Close modal when clicking outside
+    googleFormModal.on('click', function(e) {
+        if (e.target === this) {
+            closeGoogleFormModal();
+        }
+    });
+    
+    // Close with Escape key
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape' && googleFormModal.is(':visible')) {
+            closeGoogleFormModal();
+        }
+    });
+    
+    function closeGoogleFormModal() {
+        googleFormModal.fadeOut(300);
+        $('body').css('overflow', 'auto');
+        
+        // Reset iframe to stop any ongoing form submissions
+        setTimeout(() => {
+            googleFormIframe.attr('src', '');
+        }, 300);
+    }
+    
+    // Handle iframe loading errors
+    googleFormIframe.on('error', function() {
+        formLoading.html(`
+            <div style="color: var(--danger);">
+                <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 15px;"></i>
+                <p>Failed to load contact form.</p>
+                <p style="font-size: 0.9rem; margin-top: 10px;">Please try opening in a new tab instead.</p>
+                <button onclick="window.open('<?= htmlspecialchars(addslashes($company['google_form_url'] ?? '')) ?>', '_blank')" 
+                        class="btn btn-primary" style="margin-top: 15px;">
+                    <i class="fas fa-external-link-alt"></i> Open in New Tab
+                </button>
+            </div>
+        `);
+    });
+});
     </script>
 </body>
 </html>

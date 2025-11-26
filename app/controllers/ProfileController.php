@@ -215,6 +215,8 @@ public function index()
         $company_description = $this->io->post('company_description');
         $company_address = $this->io->post('company_address');
 
+        $google_form_url = $this->io->post('google_form_url');
+
         // Validate required fields
         if (empty($name) || empty($email) || empty($company_name)) {
             $_SESSION['error'] = 'Name, email, and company name are required fields.';
@@ -256,6 +258,10 @@ public function index()
             'phone' => $phone,
             'updated_at' => date('Y-m-d H:i:s')
         ];
+
+          if (!empty($google_form_url)) {
+            $companyData['google_form_url'] = $google_form_url;
+        }
 
         // Handle company logo upload
         if (isset($_FILES['company_logo']) && $_FILES['company_logo']['error'] === UPLOAD_ERR_OK) {
