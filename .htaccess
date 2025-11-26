@@ -1,11 +1,20 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase 
+RewriteEngine On
 
-    # If the request is for an existing file or directory, serve it directly
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+# Set the base URL for your application
+# For Render, you might need to use just "/"
+RewriteBase /
 
-    # Otherwise, route all requests to index.php
-    RewriteRule ^(.*)$ index.php [L]
+# If the above doesn't work, try your specific Render URL
+# RewriteBase /
+
+# Redirect all requests to index.html for SPA routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# Optional: Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
 </IfModule>
