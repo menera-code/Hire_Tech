@@ -286,29 +286,6 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
             padding: 0 15px;
             position: relative;
         }
-
-        .btn-facebook {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-            padding: 12px 20px;
-            border: 2px solid #1877F2;
-            border-radius: var(--border-radius);
-            background: #1877F2;
-            color: white;
-            font-weight: 500;
-            text-decoration: none;
-            transition: var(--transition);
-            margin-top: 10px;
-        }
-
-        .btn-facebook:hover {
-            background: #166fe5;
-            border-color: #166fe5;
-            transform: translateY(-1px);
-        }
     </style>
 </head>
 <body>
@@ -334,8 +311,6 @@ unset($_SESSION['error'], $_SESSION['show_signin']);
                         alt="Google" width="18" height="18">
                     Continue with Google
                 </a>
-                
-                
                 
                 <div class="divider">
                     <span>or</span>

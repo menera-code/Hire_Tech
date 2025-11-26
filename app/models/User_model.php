@@ -50,14 +50,6 @@ class User_model extends Model
         return isset($result[0]) ? $result[0] : $result;
     }
 
-    public function findByFacebookId(string $facebookId)
-    {
-        $result = $this->db->table($this->table)
-            ->where('facebook_id', $facebookId)
-            ->get();
-        return isset($result[0]) ? $result[0] : $result;
-    }
-
     public function updateUser(int $userId, array $data)
     {
         return $this->db->table($this->table)
@@ -98,41 +90,6 @@ class User_model extends Model
         
         $inserted = $this->create($userData);
         return $inserted ? $this->findByGoogleId($googleData['google_id']) : false;
-    }
-
-    public function createOrUpdateFacebookUser(array $facebookData)
-    {
-        $existingUser = $this->findByFacebookId($facebookData['facebook_id']);
-        if($existingUser) {
-            $this->updateUser($existingUser['id'], [
-                'name' => $facebookData['name'],
-                'email' => $facebookData['email'],
-                'avatar' => $facebookData['avatar']
-            ]);
-            return $existingUser;
-        }
-        
-        $existingUserByEmail = $this->findByEmail($facebookData['email']);
-        if($existingUserByEmail) {
-            $this->updateUser($existingUserByEmail['id'], [
-                'facebook_id' => $facebookData['facebook_id'],
-                'avatar' => $facebookData['avatar']
-            ]);
-            return $existingUserByEmail;
-        }
-        
-        $userData = [
-            'name' => $facebookData['name'],
-            'email' => $facebookData['email'],
-            'facebook_id' => $facebookData['facebook_id'],
-            'avatar' => $facebookData['avatar'],
-            'role' => 'job_seeker',
-            'password' => null,
-            'created_at' => date('Y-m-d H:i:s')
-        ];
-        
-        $inserted = $this->create($userData);
-        return $inserted ? $this->findByFacebookId($facebookData['facebook_id']) : false;
     }
 
     public function findById(int $userId)
@@ -263,36 +220,4 @@ class User_model extends Model
             return [];
         }
     }
-
-    public function deleteUserDataByFacebookId($facebookId)
-{
-    try {
-        error_log("Attempting to delete data for Facebook ID: " . $facebookId);
-        
-        // Find user by Facebook ID
-        $user = $this->findByFacebookId($facebookId);
-        
-        if (!$user) {
-            error_log("No user found with Facebook ID: " . $facebookId);
-            return true; // Return true as data doesn't exist
-        }
-        
-        error_log("Found user to delete: " . $user['email'] . " (ID: " . $user['id'] . ")");
-        
-        // Use your existing deleteUser method
-        $result = $this->deleteUser($user['id']);
-        
-        if ($result) {
-            error_log("Successfully deleted user data for Facebook ID: " . $facebookId);
-        } else {
-            error_log("Failed to delete user data for Facebook ID: " . $facebookId);
-        }
-        
-        return $result;
-        
-    } catch (Exception $e) {
-        error_log("Error deleting Facebook user data: " . $e->getMessage());
-        return false;
-    }
-}
 }
