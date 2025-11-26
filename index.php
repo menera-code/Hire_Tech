@@ -66,7 +66,7 @@ define('PREVENT_DIRECT_ACCESS', TRUE);
  * This let you set up your public folder where css, js and other public,
  * files will be visible
  */
-	$public_folder			= 'public';
+	$public_folder			= '';
 
 /*
  * ------------------------------------------------------
