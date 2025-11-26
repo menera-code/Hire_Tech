@@ -66,7 +66,7 @@ $router->post('/auth/register', 'AuthController@register');
 $router->post('/auth/login', 'AuthController@login');
 $router->get('/auth/google', 'AuthController@google_login');
 $router->get('/auth/google_callback', 'AuthController@google_callback');
-$router->get('/logout', 'AuthController@logout');
+$router->get('/logout', 'AdminController@logout');
 
 // ========== DASHBOARD ROUTES ==========
 
