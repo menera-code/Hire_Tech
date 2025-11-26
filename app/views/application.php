@@ -2041,10 +2041,6 @@ if ($role == 'job_seeker') {
                                             </button>
                                         <?php endif; ?>
                                         
-                                        <button class="btn btn-secondary contact-applicant-btn" data-email="<?= htmlspecialchars($application['applicant_email'] ?? '') ?>">
-                                            <i class="fas fa-envelope"></i> Contact
-                                        </button>
-
                                         <?php if (!empty($application['applicant_resume_file'])): ?>
                                         <a href="<?= htmlspecialchars($application['applicant_resume_file']) ?>" class="btn btn-info" target="_blank">
                                             <i class="fas fa-download"></i> Download Resume

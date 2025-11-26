@@ -432,16 +432,13 @@ section {
                     </div>
                     <div class="hero-stats">
                         <div>
-                            <strong>10,000+</strong>
-                            <span>Active Jobs</span>
+                            
                         </div>
                         <div>
-                            <strong>5,000+</strong>
-                            <span>Companies</span>
+                           
                         </div>
                         <div>
-                            <strong>50,000+</strong>
-                            <span>Job Seekers</span>
+                          
                         </div>
                     </div>
                 </div>
@@ -458,22 +455,22 @@ section {
                     <div class="category-card">
                         <i class="fa-solid fa-code"></i>
                         <h3>Software Development</h3>
-                        <span>2,500+ jobs</span>
+                        <span></span>
                     </div>
                     <div class="category-card">
                         <i class="fa-solid fa-database"></i>
                         <h3>Data Science</h3>
-                        <span>1,800+ jobs</span>
+                        <span></span>
                     </div>
                     <div class="category-card">
                         <i class="fa-solid fa-shield-halved"></i>
                         <h3>Cybersecurity</h3>
-                        <span>1,200+ jobs</span>
+                        <span></span>
                     </div>
                     <div class="category-card">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <h3>Mobile Development</h3>
-                        <span>900+ jobs</span>
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -521,7 +518,7 @@ section {
                             <i class="fa-solid fa-users"></i>
                             <div>
                                 <strong>Access to Top Talent</strong>
-                                <span>Connect with 50,000+ qualified IT professionals</span>
+                                <span>Connect with qualified IT professionals</span>
                             </div>
                         </li>
                         <li>
@@ -546,8 +543,8 @@ section {
 
         <section class="cta-section">
             <div class="container">
-                <h2>Join thousands of IT professionals and companies</h2>
-                <p>who are already using IT JobHub to find their perfect match.</p>
+                <h2>Join IT professionals and companies</h2>
+                <p>who are already using HireTech to find their perfect match.</p>
                 <div class="cta-buttons">
                     <a href="/register" class="btn btn-light">Create Free Account</a>
                     <a href="/login" class="btn btn-secondary-outline">Browse Jobs</a>
@@ -560,7 +557,7 @@ section {
         <div class="container footer-content">
             <div class="footer-col about">
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-briefcase"></i> IT JobHub
+                    <i class="fa-solid fa-briefcase"></i> HireTech
                 </a>
                 <p>Connecting IT professionals with their dream careers.</p>
             </div>
@@ -568,31 +565,25 @@ section {
                 <h3>For Job Seekers</h3>
                 <ul>
                     <li><a href="#">Browse Jobs</a></li>
-                    <li><a href="#">Career Resources</a></li>
-                    <li><a href="#">Resume Tips</a></li>
-                    <li><a href="#">Interview Prep</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>For Employers</h3>
                 <ul>
                     <li><a href="#">Post a Job</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Recruiting Solutions</a></li>
-                    <li><a href="#">Talent Search</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li><i class="fa-solid fa-envelope"></i> contact@itjobhub.com</li>
-                    <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@HireTech.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 0977- 012-6677</li>
                     <li><i class="fa-solid fa-map-marker-alt"></i> San Francisco, CA</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 IT JobHub. All rights reserved.</p>
+            <p>&copy; 2025 HireTech. All rights reserved.</p>
         </div>
     </footer>
 
