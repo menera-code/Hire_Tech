@@ -226,7 +226,7 @@ class Company_model extends Model
                 'company_name' => $companyData['company_name'],
                 'company_description' => $companyData['company_description'] ?? '',
                 'company_website' => $companyData['company_website'] ?? '',
-                'comapany_url' => $companyData['google_form_url'] ?? '',
+                'google_form_url' => $companyData['google_form_url'] ?? '', // CHANGED FROM 'comapany_url'
                 'company_size' => $companyData['company_size'] ?? '',
                 'company_industry' => $companyData['company_industry'] ?? '',
                 'company_address' => $companyData['company_address'] ?? '',
