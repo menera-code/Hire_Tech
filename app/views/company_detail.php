@@ -909,8 +909,7 @@ function formatDate($dateString) {
                                 </div>
                                 <?php endif; ?>
 
-
-                                <?php if (!empty($company['google_form_url'])): ?>
+                                  <?php if (!empty($company['google_form_url'])): ?>
                                 <div class="detail-section">
                                     <h3><i class="fas fa-envelope"></i> Contact Company</h3>
                                     <div class="detail-content">
