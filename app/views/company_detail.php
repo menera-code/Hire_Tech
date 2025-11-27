@@ -1282,9 +1282,7 @@ function formatDate($dateString) {
         </div>
         
         <div class="modal-actions">
-            <button class="btn btn-secondary close-modal">
-                <i class="fas fa-times"></i> Close
-            </button>
+            
             <a href="<?= htmlspecialchars($company['google_form_url'] ?? '#') ?>" 
                target="_blank" 
                class="btn btn-primary" 
