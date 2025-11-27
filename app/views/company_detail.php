@@ -984,7 +984,7 @@ function formatDate($dateString) {
                     <div class="company-header">
                         <div class="company-logo">
                             <?php if (!empty($company['company_logo'])): ?>
-                                <img src="/<?= htmlspecialchars($company['company_logo']) ?>" alt="<?= htmlspecialchars($company['company_name']) ?>" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\"fas fa-building\"></i>';">
+                                <img src="/<?= htmlspecialchars($company['company_logo']) ?>" alt="<?= htmlspecialchars($company['company_name']) ?>" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\"fas fa-building\"></i>
                             <?php else: ?>
                                 <i class="fas fa-building"></i>
                             <?php endif; ?>
