@@ -44,29 +44,38 @@ function formatDate($dateString) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4361ee;
-            --primary-dark: #3a56d4;
-            --secondary: #7209b7;
-            --success: #4cc9f0;
-            --info: #4895ef;
-            --warning: #f72585;
-            --danger: #e63946;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --gray-100: #f8f9fa;
-            --gray-200: #e9ecef;
-            --gray-300: #dee2e6;
-            --gray-400: #ced4da;
-            --gray-500: #adb5bd;
-            --gray-600: #6c757d;
-            --gray-700: #495057;
-            --gray-800: #343a40;
-            --gray-900: #212529;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #dbeafe;
+            --secondary: #7c3aed;
+            --success: #059669;
+            --info: #0891b2;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
             --border-radius: 12px;
-            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s ease;
+            --border-radius-lg: 16px;
+            --border-radius-sm: 8px;
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -77,54 +86,57 @@ function formatDate($dateString) {
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: #f5f7fb;
-            color: var(--gray-800);
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            color: var(--gray-700);
             line-height: 1.6;
             overflow-x: hidden;
+            font-weight: 400;
         }
 
         .main-content {
             margin-left: 280px;
             min-height: 100vh;
-            background: #f5f7fb;
+            background: transparent;
         }
 
         .dashboard-container {
-            padding: 20px;
-            max-width: 1200px;
+            padding: 30px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         /* Messages */
         .alert {
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border-radius: var(--border-radius);
             font-weight: 500;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            border: none;
+            box-shadow: var(--shadow-md);
         }
 
         .alert-success {
-            background: rgba(76, 201, 240, 0.15);
-            color: #0d6efd;
-            border-left: 4px solid #4cc9f0;
+            background: white;
+            color: var(--success);
+            border-left: 4px solid var(--success);
         }
 
         .alert-error {
-            background: rgba(230, 57, 70, 0.15);
-            color: #e63946;
-            border-left: 4px solid #e63946;
+            background: white;
+            color: var(--danger);
+            border-left: 4px solid var(--danger);
         }
 
         /* Header Section */
         .header-section {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 32px;
             color: white;
             position: relative;
             overflow: hidden;
@@ -133,36 +145,55 @@ function formatDate($dateString) {
         .header-section::before {
             content: '';
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 200px;
-            height: 200px;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            transform: translate(30%, -30%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .header-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
         }
 
         .header-section h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 8px;
             font-weight: 700;
+            letter-spacing: -0.025em;
         }
 
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             opacity: 0.9;
+            font-weight: 400;
         }
 
         /* Content Grid */
         .content-grid {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 25px;
-            margin-bottom: 30px;
+            gap: 32px;
+            margin-bottom: 40px;
             height: calc(100vh - 200px);
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1200px) {
             .content-grid {
                 grid-template-columns: 1fr;
                 height: auto;
@@ -171,35 +202,42 @@ function formatDate($dateString) {
 
         .section {
             background: white;
-            padding: 25px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
             display: flex;
             flex-direction: column;
+            border: 1px solid var(--gray-200);
+            transition: var(--transition);
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-xl);
         }
 
         .section-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--gray-200);
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--gray-100);
             flex-shrink: 0;
         }
 
         .section-header h2 {
             margin: 0;
-            color: var(--dark);
+            color: var(--gray-900);
             font-weight: 600;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+            letter-spacing: -0.025em;
         }
 
         /* Scrollable Content Areas */
         .scrollable-content {
             flex: 1;
             overflow-y: auto;
-            padding-right: 10px;
+            padding-right: 12px;
         }
 
         /* Custom Scrollbar */
@@ -225,28 +263,33 @@ function formatDate($dateString) {
         .company-header {
             display: flex;
             align-items: flex-start;
-            gap: 25px;
-            margin-bottom: 25px;
+            gap: 32px;
+            margin-bottom: 32px;
+            position: relative;
+            z-index: 2;
         }
 
         .company-logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 12px;
+            width: 140px;
+            height: 140px;
+            border-radius: var(--border-radius-lg);
             object-fit: cover;
-            border: 1px solid var(--gray-200);
-            background: var(--gray-100);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
-            color: var(--primary);
+            font-size: 3.5rem;
+            color: white;
+            box-shadow: var(--shadow-lg);
+            flex-shrink: 0;
         }
 
         .company-logo img {
             width: 100%;
             height: 100%;
-            border-radius: 12px;
+            border-radius: var(--border-radius);
             object-fit: cover;
         }
 
@@ -255,231 +298,305 @@ function formatDate($dateString) {
         }
 
         .company-info h1 {
-            margin: 0 0 10px 0;
-            color: var(--dark);
+            margin: 0 0 12px 0;
+            color: white;
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .company-industry {
-            color: var(--primary);
-            font-weight: 600;
-            margin: 0 0 15px 0;
-            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            margin: 0 0 20px 0;
+            font-size: 1.25rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
         }
 
         .company-description {
-            color: var(--gray-700);
-            margin: 0 0 20px 0;
-            line-height: 1.6;
-            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0 0 24px 0;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            max-width: 600px;
         }
 
         /* Company Stats */
         .company-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-bottom: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
         }
 
         .stat-item {
             text-align: center;
-            padding: 20px;
-            background: var(--gray-100);
-            border-radius: 8px;
+            padding: 24px 20px;
+            background: var(--gray-50);
+            border-radius: var(--border-radius);
             border-left: 4px solid var(--primary);
+            transition: var(--transition);
+            border: 1px solid var(--gray-200);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
         }
 
         .stat-number {
-            font-size: 2rem;
+            font-size: 2.25rem;
             font-weight: 700;
             color: var(--primary);
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            line-height: 1;
         }
 
         .stat-label {
             color: var(--gray-600);
             font-size: 0.9rem;
             font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         /* Company Details */
         .company-details {
-            margin-bottom: 25px;
+            margin-bottom: 32px;
         }
 
         .detail-section {
-            margin-bottom: 25px;
+            margin-bottom: 32px;
         }
 
         .detail-section h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-            font-size: 1.2rem;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            font-size: 1.3rem;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 12px;
+            font-weight: 600;
         }
 
         .detail-section h3 i {
-            font-size: 1rem;
+            font-size: 1.1rem;
+            color: var(--primary);
         }
 
         .detail-content {
-            background: var(--gray-100);
-            padding: 20px;
-            border-radius: 8px;
+            background: var(--gray-50);
+            padding: 24px;
+            border-radius: var(--border-radius);
             border-left: 4px solid var(--primary);
-            line-height: 1.6;
+            line-height: 1.7;
+            border: 1px solid var(--gray-200);
         }
 
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .info-item {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 8px;
         }
 
         .info-label {
             font-weight: 600;
             color: var(--gray-600);
             font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         .info-value {
-            color: var(--dark);
+            color: var(--gray-900);
             font-weight: 500;
+            font-size: 1rem;
         }
 
         /* Recent Jobs */
         .jobs-list {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
         }
 
         .job-card {
             border: 1px solid var(--gray-200);
-            padding: 20px;
-            border-radius: 10px;
+            padding: 24px;
+            border-radius: var(--border-radius);
             transition: var(--transition);
             background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+            transform: scaleY(0);
+            transition: var(--transition);
         }
 
         .job-card:hover {
             border-color: var(--primary);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: var(--shadow-lg);
             transform: translateY(-2px);
+        }
+
+        .job-card:hover::before {
+            transform: scaleY(1);
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .job-header h4 {
             margin: 0;
-            color: var(--dark);
+            color: var(--gray-900);
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.25rem;
         }
 
         .job-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 10px;
+            gap: 20px;
+            margin-bottom: 16px;
         }
 
         .meta-item {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
             color: var(--gray-600);
             font-size: 0.9rem;
+            font-weight: 500;
         }
 
         .meta-item i {
             color: var(--primary);
+            width: 16px;
         }
 
         .job-description {
             color: var(--gray-700);
-            margin: 0 0 15px 0;
-            line-height: 1.5;
+            margin: 0 0 20px 0;
+            line-height: 1.6;
         }
 
         /* Action Buttons */
         .action-buttons {
             display: flex;
-            gap: 15px;
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid var(--gray-200);
+            gap: 16px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 2px solid var(--gray-100);
             flex-shrink: 0;
         }
 
         .btn {
-            padding: 12px 20px;
+            padding: 14px 24px;
             border: none;
-            border-radius: 6px;
+            border-radius: var(--border-radius);
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 600;
             transition: var(--transition);
-            font-size: 0.9rem;
-            display: flex;
+            font-size: 0.95rem;
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             text-decoration: none;
+            letter-spacing: 0.025em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: var(--transition);
+        }
+
+        .btn:hover::before {
+            left: 100%;
         }
 
         .btn-primary {
             background: var(--primary);
             color: white;
+            box-shadow: var(--shadow-md);
         }
 
         .btn-primary:hover {
             background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
         .btn-secondary {
-            background: var(--gray-200);
+            background: white;
             color: var(--gray-700);
+            border: 1px solid var(--gray-300);
+            box-shadow: var(--shadow-sm);
         }
 
         .btn-secondary:hover {
-            background: var(--gray-300);
+            background: var(--gray-50);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         .btn-success {
             background: var(--success);
             color: white;
+            box-shadow: var(--shadow-md);
         }
 
         .btn-success:hover {
-            background: #3ab3d4;
+            background: #047857;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
         .btn-warning {
             background: var(--warning);
             color: white;
+            box-shadow: var(--shadow-md);
         }
 
         .btn-warning:hover {
-            background: #e6167a;
+            background: #b45309;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
         .btn-sm {
-            padding: 8px 12px;
-            font-size: 0.8rem;
+            padding: 10px 16px;
+            font-size: 0.85rem;
         }
 
         /* Text Muted */
@@ -492,10 +609,16 @@ function formatDate($dateString) {
         .no-data {
             text-align: center;
             color: var(--gray-500);
-            font-style: italic;
-            padding: 40px;
-            background: var(--gray-100);
-            border-radius: 8px;
+            padding: 60px 40px;
+            background: var(--gray-50);
+            border-radius: var(--border-radius);
+            border: 2px dashed var(--gray-300);
+        }
+
+        .no-data i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--gray-400);
         }
 
         /* Mobile menu toggle */
@@ -505,16 +628,70 @@ function formatDate($dateString) {
             top: 20px;
             left: 20px;
             z-index: 1001;
-            background: #4361ee;
+            background: var(--primary);
             color: white;
             border: none;
-            border-radius: 8px;
-            width: 40px;
-            height: 40px;
+            border-radius: var(--border-radius);
+            width: 44px;
+            height: 44px;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             font-size: 1.2rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+
+        .mobile-menu-toggle:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        /* ========== MAP STYLES ========== */
+        .map-container {
+            height: 300px;
+            width: 100%;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--gray-300);
+            margin-bottom: 16px;
+            overflow: hidden;
+            position: relative;
+            background: var(--gray-100);
+            box-shadow: var(--shadow-sm);
+        }
+
+        #companyMap, #jobDetailsMap {
+            height: 100% !important;
+            width: 100% !important;
+            min-height: 300px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .leaflet-container {
+            height: 100% !important;
+            width: 100% !important;
+            background: var(--gray-100) !important;
+            border-radius: var(--border-radius);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .map-coordinates {
+            background: var(--gray-50);
+            padding: 12px 16px;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin-bottom: 12px;
+            border: 1px solid var(--gray-200);
+            font-family: 'Monaco', 'Consolas', monospace;
+        }
+
+        .map-instructions {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-bottom: 12px;
+            font-style: italic;
         }
 
         /* Modal Styles */
@@ -527,40 +704,55 @@ function formatDate($dateString) {
             height: 100%;
             background: rgba(0, 0, 0, 0.7);
             z-index: 1000;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .modal-content {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) scale(0.95);
             background: white;
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-xl);
             width: 90%;
             max-width: 800px;
             max-height: 90vh;
             overflow-y: auto;
+            animation: modalSlideIn 0.3s ease forwards;
+            border: 1px solid var(--gray-200);
+        }
+
+        @keyframes modalSlideIn {
+            to {
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
 
         .modal-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--gray-200);
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--gray-100);
         }
 
         .modal-header h3 {
             margin: 0;
-            color: var(--dark);
-            font-size: 1.4rem;
+            color: var(--gray-900);
+            font-size: 1.5rem;
             line-height: 1.3;
             flex: 1;
             margin-right: 20px;
+            font-weight: 600;
         }
 
         .close-modal {
@@ -569,83 +761,71 @@ function formatDate($dateString) {
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--gray-500);
-            padding: 5px;
-            transition: var(--transition);
+            padding: 8px;
+            border-radius: var(--border-radius);
+            transition: var(--transition-fast);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .close-modal:hover {
             color: var(--danger);
+            background: var(--gray-100);
         }
 
         .job-info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
         }
 
         .modal-actions {
             display: flex;
-            gap: 10px;
+            gap: 12px;
             justify-content: flex-end;
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid var(--gray-200);
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 2px solid var(--gray-100);
         }
 
-        /* ========== MAP STYLES ========== */
-        .map-container {
-            height: 300px;
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid var(--gray-300);
-            margin-bottom: 15px;
-            overflow: hidden;
-            position: relative;
-            background: #f8f9fa;
-        }
-
-        /* Map containers MUST have explicit dimensions */
-        #companyMap, #jobDetailsMap {
-            height: 100% !important;
-            width: 100% !important;
-            min-height: 300px;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Leaflet container overrides */
-        .leaflet-container {
-            height: 100% !important;
-            width: 100% !important;
-            background: #f8f9fa !important;
-            border-radius: 8px;
-        }
-
-        .leaflet-tile-container {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .leaflet-map-pane {
-            z-index: 1;
-        }
-
-        .map-coordinates {
-            background: var(--gray-100);
-            padding: 10px;
-            border-radius: 6px;
+        /* Badges and Tags */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 20px;
             font-size: 0.8rem;
-            color: var(--gray-600);
-            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 0.025em;
         }
 
-        .map-instructions {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-            margin-bottom: 10px;
-            font-style: italic;
+        .badge-success {
+            background: #d1fae5;
+            color: var(--success);
+        }
+
+        .badge-warning {
+            background: #fef3c7;
+            color: var(--warning);
+        }
+
+        /* Loading States */
+        .skeleton {
+            background: linear-gradient(90deg, var(--gray-200) 25%, var(--gray-300) 50%, var(--gray-200) 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            border-radius: var(--border-radius);
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
 
         /* Mobile Responsive */
@@ -656,24 +836,24 @@ function formatDate($dateString) {
             
             .main-content {
                 margin-left: 0;
-                padding-top: 70px;
+                padding-top: 80px;
             }
             
             .dashboard-container {
-                padding: 15px;
-            }
-            
-            .header-section {
                 padding: 20px;
             }
             
+            .header-section {
+                padding: 30px 24px;
+            }
+            
             .header-section h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             
             .content-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 24px;
                 height: auto;
             }
             
@@ -681,13 +861,13 @@ function formatDate($dateString) {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                gap: 15px;
+                gap: 20px;
             }
             
             .company-logo {
-                width: 100px;
-                height: 100px;
-                font-size: 2.5rem;
+                width: 120px;
+                height: 120px;
+                font-size: 3rem;
             }
             
             .company-stats {
@@ -709,7 +889,7 @@ function formatDate($dateString) {
 
             .modal-content {
                 width: 95%;
-                padding: 20px;
+                padding: 24px;
             }
 
             .modal-actions {
@@ -722,7 +902,7 @@ function formatDate($dateString) {
 
             .modal-header {
                 flex-direction: column;
-                gap: 10px;
+                gap: 12px;
             }
 
             .modal-header h3 {
@@ -735,6 +915,24 @@ function formatDate($dateString) {
             
             #companyMap, #jobDetailsMap {
                 min-height: 250px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .action-buttons,
+            .mobile-menu-toggle,
+            .modal-actions {
+                display: none !important;
+            }
+            
+            .section {
+                box-shadow: none !important;
+                border: 1px solid #ccc !important;
             }
         }
     </style>
@@ -773,7 +971,7 @@ function formatDate($dateString) {
             <?php endif; ?>
 
             <!-- Back Button -->
-            <div style="margin-bottom: 20px;">
+            <div style="margin-bottom: 24px;">
                 <a href="/companies" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
                     <i class="fas fa-arrow-left"></i>
                     Back to Companies
@@ -786,7 +984,7 @@ function formatDate($dateString) {
                     <div class="company-header">
                         <div class="company-logo">
                             <?php if (!empty($company['company_logo'])): ?>
-                                <img src="/<?= htmlspecialchars($company['company_logo']) ?>" alt="<?= htmlspecialchars($company['company_name']) ?>">
+                                <img src="/<?= htmlspecialchars($company['company_logo']) ?>" alt="<?= htmlspecialchars($company['company_name']) ?>" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\"fas fa-building\"></i>';">
                             <?php else: ?>
                                 <i class="fas fa-building"></i>
                             <?php endif; ?>
@@ -808,6 +1006,7 @@ function formatDate($dateString) {
                     <div class="section">
                         <div class="section-header">
                             <h2>Company Overview</h2>
+                            <span class="badge"><?= $company['active_jobs'] ?? 0 ?> Active</span>
                         </div>
 
                         <!-- Scrollable Company Content -->
@@ -825,7 +1024,7 @@ function formatDate($dateString) {
                                 <?php if (!empty($company['company_size'])): ?>
                                 <div class="stat-item">
                                     <div class="stat-number"><?= htmlspecialchars($company['company_size']) ?></div>
-                                    <div class="stat-label">Company Size</div>
+                                    <div class="stat-label">Employees</div>
                                 </div>
                                 <?php endif; ?>
                             </div>
@@ -883,7 +1082,7 @@ function formatDate($dateString) {
                                 <div class="detail-section">
                                     <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
                                     <div class="detail-content">
-                                        <?= htmlspecialchars($company['company_address']) ?>
+                                        <p style="margin-bottom: 16px; font-weight: 500;"><?= htmlspecialchars($company['company_address']) ?></p>
                                         
                                         <!-- Company Location Map -->
                                         <div class="map-container">
@@ -892,7 +1091,6 @@ function formatDate($dateString) {
                                         <div class="map-coordinates">
                                             <span id="companyCoordinates">Loading location...</span>
                                         </div>
-                                       
                                     </div>
                                 </div>
                                 <?php endif; ?>
@@ -901,26 +1099,26 @@ function formatDate($dateString) {
                                 <div class="detail-section">
                                     <h3><i class="fas fa-globe"></i> Website</h3>
                                     <div class="detail-content">
-                                        <a href="<?= htmlspecialchars($company['company_website']) ?>" target="_blank" style="color: var(--primary); text-decoration: none;">
-                                            <?= htmlspecialchars($company['company_website']) ?>
-                                            <i class="fas fa-external-link-alt" style="margin-left: 5px; font-size: 0.8rem;"></i>
+                                        <a href="<?= htmlspecialchars($company['company_website']) ?>" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 500;">
+                                            <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>
+                                            Visit Website
                                         </a>
                                     </div>
                                 </div>
                                 <?php endif; ?>
 
-                                  <?php if (!empty($company['google_form_url'])): ?>
+                                <?php if (!empty($company['google_form_url'])): ?>
                                 <div class="detail-section">
                                     <h3><i class="fas fa-envelope"></i> Contact Company</h3>
                                     <div class="detail-content">
-                                        <p>Interested in working at <?= htmlspecialchars($company['company_name']) ?>? Send them a message!</p>
+                                        <p style="margin-bottom: 16px;">Interested in working at <?= htmlspecialchars($company['company_name']) ?>? Send them a message!</p>
                                         
                                         <!-- Contact Button -->
-                                        <button class="btn btn-primary btn-block" id="showContactForm" style="margin-top: 15px;">
+                                        <button class="btn btn-primary btn-block" id="showContactForm" style="width: 100%;">
                                             <i class="fas fa-paper-plane"></i> Contact Company
                                         </button>
                                         
-                                        <div style="margin-top: 10px; font-size: 0.8rem; color: var(--gray-500); text-align: center;">
+                                        <div style="margin-top: 12px; font-size: 0.8rem; color: var(--gray-500); text-align: center;">
                                             <i class="fas fa-shield-alt"></i> Your information is secure
                                         </div>
                                     </div>
@@ -934,6 +1132,11 @@ function formatDate($dateString) {
                             <a href="/companies" class="btn btn-secondary">
                                 <i class="fas fa-building"></i> Browse Companies
                             </a>
+                            <?php if (!$is_employer): ?>
+                            <a href="/jobs" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Find Jobs
+                            </a>
+                            <?php endif; ?>
                         </div>
                     </div>
 
@@ -954,8 +1157,8 @@ function formatDate($dateString) {
                             <div class="detail-section">
                                 <div class="section-header">
                                     <h2>All Jobs</h2>
-                                    <span style="color: var(--gray-600); font-size: 0.9rem;">
-                                        <?= count($company['recent_jobs'] ?? []) ?> job<?= count($company['recent_jobs'] ?? []) !== 1 ? 's' : '' ?>
+                                    <span style="color: var(--gray-600); font-size: 0.9rem; font-weight: 500;">
+                                        <?= count($company['recent_jobs'] ?? []) ?> job<?= count($company['recent_jobs'] ?? []) !== 1 ? 's' : '' ?> available
                                     </span>
                                 </div>
 
@@ -965,7 +1168,7 @@ function formatDate($dateString) {
                                         <div class="job-card">
                                             <div class="job-header">
                                                 <h4><?= htmlspecialchars($job['title']) ?></h4>
-                                                <span style="color: var(--success); font-weight: 600;">
+                                                <span style="color: var(--success); font-weight: 600; font-size: 1.1rem;">
                                                     <?= htmlspecialchars($job['salary'] ?? 'Salary not specified') ?>
                                                 </span>
                                             </div>
@@ -990,7 +1193,7 @@ function formatDate($dateString) {
                                                 <?= htmlspecialchars(substr($job['description'], 0, 150)) ?><?= strlen($job['description']) > 150 ? '...' : '' ?>
                                             </p>
                                             <?php endif; ?>
-                                            <div class="action-buttons" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--gray-200);">
+                                            <div class="action-buttons" style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--gray-200);">
                                                 <!-- View Details Button -->
                                                 <button class="btn btn-primary view-job-details" 
                                                         data-job-id="<?= $job['id'] ?>" 
@@ -1008,7 +1211,7 @@ function formatDate($dateString) {
                                                 </button>
                                                 
                                                 <?php if (!$is_employer): ?>
-                                                <a href="/dashboard/apply_job?job_id=<?= $job['id'] ?>" class="btn btn-success btn-sm" style="padding: 8px 12px; font-size: 0.8rem;">
+                                                <a href="/dashboard/apply_job?job_id=<?= $job['id'] ?>" class="btn btn-success btn-sm">
                                                     <i class="fas fa-paper-plane"></i> Apply Now
                                                 </a>
                                                 <?php endif; ?>
@@ -1018,9 +1221,10 @@ function formatDate($dateString) {
                                     </div>
                                 <?php else: ?>
                                     <div class="no-data">
-                                        <i class="fas fa-briefcase" style="font-size: 3rem; margin-bottom: 1rem; color: var(--gray-300);"></i>
-                                        <p>No current job openings at the moment.</p>
-                                        <p style="font-size: 0.9rem; margin-top: 10px;">Check back later for new opportunities!</p>
+                                        <i class="fas fa-briefcase"></i>
+                                        <h3 style="color: var(--gray-600); margin-bottom: 8px;">No Current Openings</h3>
+                                        <p style="margin-bottom: 20px;">This company doesn't have any job openings at the moment.</p>
+                                        <p style="font-size: 0.9rem; color: var(--gray-500);">Check back later for new opportunities!</p>
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -1036,9 +1240,9 @@ function formatDate($dateString) {
                 </div>
                 <div class="section" style="text-align: center;">
                     <div class="no-data">
-                        <i class="fas fa-building" style="font-size: 4rem; margin-bottom: 1rem; color: var(--gray-300);"></i>
-                        <h3 style="color: var(--gray-600); margin-bottom: 10px;">Company Not Available</h3>
-                        <p style="margin-bottom: 20px;">The company you're trying to view is not available.</p>
+                        <i class="fas fa-building"></i>
+                        <h3 style="color: var(--gray-600); margin-bottom: 12px;">Company Not Available</h3>
+                        <p style="margin-bottom: 24px;">The company you're trying to view is not available or may have been removed.</p>
                         <a href="/companies" class="btn btn-primary">
                             <i class="fas fa-arrow-left"></i> Back to Companies
                         </a>
@@ -1058,16 +1262,17 @@ function formatDate($dateString) {
         
         <div class="modal-body" style="padding: 0;">
             <!-- Loading State -->
-            <div id="formLoading" style="padding: 40px; text-align: center; background: var(--gray-100);">
-                <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary); margin-bottom: 15px;"></i>
-                <p style="color: var(--gray-600);">Loading contact form...</p>
+            <div id="formLoading" style="padding: 60px 40px; text-align: center; background: var(--gray-50); border-radius: 0 0 var(--border-radius) var(--border-radius);">
+                <i class="fas fa-spinner fa-spin" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
+                <h4 style="color: var(--gray-700); margin-bottom: 8px;">Loading Contact Form</h4>
+                <p style="color: var(--gray-500);">Please wait while we load the contact form...</p>
             </div>
             
             <!-- Google Form Iframe -->
             <iframe id="googleFormIframe" 
                     src="" 
                     width="100%" 
-                    height="600" 
+                    height="500" 
                     frameborder="0" 
                     marginheight="0" 
                     marginwidth="0"
@@ -1135,7 +1340,6 @@ function formatDate($dateString) {
                     <div class="map-coordinates">
                         <span id="jobDetailsCoordinates">Loading location...</span>
                     </div>
-                    
                 </div>
 
                 <div class="detail-section">
