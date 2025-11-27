@@ -994,9 +994,7 @@ function formatDate($dateString) {
                             <?php if (!empty($company['company_industry'])): ?>
                                 <p class="company-industry"><?= htmlspecialchars($company['company_industry']) ?></p>
                             <?php endif; ?>
-                            <?php if (!empty($company['company_description'])): ?>
-                                <p class="company-description"><?= htmlspecialchars($company['company_description']) ?></p>
-                            <?php endif; ?>
+                            
                         </div>
                     </div>
                 </div>
